@@ -1,26 +1,142 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: #1e1508;
+  --color-foreground: #f5e6c8;
+  --color-gold: #c9a84c;
+  --color-gold-light: #e8c87a;
+  --color-gold-dark: #9a7935;
+  --color-cream: #f5e6c8;
+  --color-warm-white: #faf3e8;
+  --color-muted: #8a7a65;
+  --color-surface: #251a08;
+  --color-surface-elevated: #2e2010;
+
+  --font-serif: "Zodiak", Georgia, serif;
+  --font-sans: "Satoshi", system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1e1508;
+  color: #f5e6c8;
+  overflow-x: hidden;
+}
+
+/* Hero amber glow — desktop only, prevents gold blob on mobile */
+.hero-glow-text {
+  filter: none;
+}
+@media (min-width: 768px) {
+  .hero-glow-text {
+    filter: url(#amber-glow);
+  }
+}
+
+/* Thin decorative rule */
+.rule-gold {
+  border-color: rgba(201, 168, 76, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #1e1508;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(201, 168, 76, 0.4);
+  border-radius: 2px;
+}
+
+/* Section entrance animation */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes line-grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+.animate-fade-up {
+  animation: fade-up 1s ease forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 1.2s ease forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Staggered delay utilities */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-900 { animation-delay: 900ms; }
+
+/* Initially hidden for staggered animation */
+.reveal {
+  opacity: 0;
+}
+
+/* Hero on-load keyframes */
+@keyframes onloadopacity {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes onloadbgt {
+  from { background-position: 50% 0%; }
+  to   { background-position: 50% 100%; }
+}
+
+@keyframes onloadbgb {
+  from { background-position: 50% 100%; }
+  to   { background-position: 50% 0%; }
+}
+
+/* Form reset */
+input, textarea, select {
+  background: transparent;
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #251a08 inset;
+  -webkit-text-fill-color: #f5e6c8;
+  transition: background-color 5000s ease-in-out 0s;
 }
