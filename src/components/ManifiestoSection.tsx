@@ -65,7 +65,7 @@ export function ManifiestoSection() {
             className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16"
           >
             <p
-              className="text-sm leading-[1.9] font-normal"
+              className="text-sm leading-[1.9] font-normal text-center md:text-left"
               style={{
                 fontFamily: "'DM Sans', sans-serif",
                 color: "#a89060",
@@ -74,7 +74,7 @@ export function ManifiestoSection() {
               Creemos que la oscuridad es el lienzo sobre el que se pinta la vida. En D&apos;art, no fabricamos ambientes — los cubramos de experiencias.
             </p>
             <p
-              className="text-sm leading-[1.9] font-normal"
+              className="text-sm leading-[1.9] font-normal text-center md:text-left"
               style={{
                 fontFamily: "'DM Sans', sans-serif",
                 color: "#a89060",

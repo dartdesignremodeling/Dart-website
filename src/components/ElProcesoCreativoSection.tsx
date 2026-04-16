@@ -163,11 +163,13 @@ export function ElProcesoCreativoSection() {
                 src={step.src}
                 alt={step.alt}
                 style={{
-                  width: "100%",
+                  width: "calc(100% - 3rem)",
                   height: "500px",
                   objectFit: "cover",
                   objectPosition: "center",
                   display: "block",
+                  margin: "0 1.5rem",
+                  borderRadius: "4px",
                 }}
               />
             </div>
