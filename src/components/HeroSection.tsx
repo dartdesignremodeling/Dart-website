@@ -47,6 +47,7 @@ export function HeroSection() {
       {/* Video background */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
+        style={{ objectPosition: "center 30%" }}
         src="/images/video_hero_compressed.mp4"
         autoPlay
         muted
@@ -91,8 +92,7 @@ export function HeroSection() {
               <motion.span
                 key={word}
                 {...wordVariant(i)}
-                className="inline-block mr-[0.22em]"
-                style={{ color: "#f2ede4" }}
+                className="inline-block mr-[0.22em] text-[#f5e6c8] md:text-[#f2ede4]"
               >
                 {word}
               </motion.span>

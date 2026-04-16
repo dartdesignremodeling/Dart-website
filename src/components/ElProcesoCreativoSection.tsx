@@ -173,7 +173,17 @@ export function ElProcesoCreativoSection() {
                 }}
               />
             </div>
-            <div className="px-6 py-8">
+            <div
+              className="py-6"
+              style={{
+                paddingLeft: '1.5rem',
+                paddingRight: '1.5rem',
+                maxWidth: '100%',
+                border: 'none',
+                borderTop: 'none',
+                borderBottom: 'none',
+              }}
+            >
               <p
                 className="font-sans text-[10px] tracking-[0.4em] uppercase mb-4"
                 style={{ color: "#C9A96E" }}
@@ -187,8 +197,8 @@ export function ElProcesoCreativoSection() {
                 {step.title}
               </h3>
               <p
-                className="font-sans text-sm leading-loose"
-                style={{ color: "#a89060" }}
+                className="font-sans text-sm"
+                style={{ color: "#a89060", lineHeight: '1.6' }}
               >
                 {step.body}
               </p>

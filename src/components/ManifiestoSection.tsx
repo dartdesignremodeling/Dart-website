@@ -56,29 +56,45 @@ export function ManifiestoSection() {
             de un espacio.&rdquo;
           </motion.h2>
 
-          {/* Two-column body */}
+          {/* Mobile: two stacked paragraphs, no dividers */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 1.0, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16"
+            className="md:hidden flex flex-col gap-6"
           >
             <p
-              className="text-sm leading-[1.9] font-normal text-center md:text-left"
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                color: "#a89060",
-              }}
+              className="text-sm leading-[1.9] font-normal text-center"
+              style={{ fontFamily: "'DM Sans', sans-serif", color: "#a89060" }}
+            >
+              Creemos que la oscuridad es el lienzo sobre el que se pinta la vida. En D&apos;art, no fabricamos ambientes, los cubramos de experiencias.
+            </p>
+            <p
+              className="text-sm leading-[1.9] font-normal text-center"
+              style={{ fontFamily: "'DM Sans', sans-serif", color: "#a89060" }}
+            >
+              Nacidos de la honestidad de los materiales: mármol, madera, acero, elevados por la precisión del diseño, nuestros espacios son refugios para quienes los habitan.
+            </p>
+          </motion.div>
+
+          {/* Desktop: two-column body */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 1.0, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            className="hidden md:grid md:grid-cols-2 md:gap-16"
+          >
+            <p
+              className="text-sm leading-[1.9] font-normal text-left"
+              style={{ fontFamily: "'DM Sans', sans-serif", color: "#a89060" }}
             >
               Creemos que la oscuridad es el lienzo sobre el que se pinta la vida. En D&apos;art, no fabricamos ambientes — los cubramos de experiencias.
             </p>
             <p
-              className="text-sm leading-[1.9] font-normal text-center md:text-left"
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                color: "#a89060",
-              }}
+              className="text-sm leading-[1.9] font-normal text-left"
+              style={{ fontFamily: "'DM Sans', sans-serif", color: "#a89060" }}
             >
               Nacidos de la honestidad de los materiales — mármol, madera, acero — y elevados por la precisión del diseño, nuestros espacios son refugios para quienes los habitan.
             </p>
