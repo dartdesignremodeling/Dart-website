@@ -47,11 +47,13 @@ export function HeroSection() {
       {/* Video background */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="/images/video_hero.mp4"
+        src="/images/video_hero_compressed.mp4"
         autoPlay
         muted
         loop
         playsInline
+        preload="auto"
+        poster="/images/hero-poster.jpg"
         aria-hidden="true"
       />
 
