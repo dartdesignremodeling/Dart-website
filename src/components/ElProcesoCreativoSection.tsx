@@ -94,18 +94,29 @@ export function ElProcesoCreativoSection() {
               }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={step.src}
-                alt={step.alt}
+              <div
                 style={{
-                  width: "100%",
-                  height: "560px",
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  display: "block",
-                  maxWidth: "380px",
+                  position: 'relative',
+                  transform: 'none',
+                  width: '75%',
+                  maxWidth: '400px',
+                  boxShadow: '0 2px 4px rgba(0,0,0,0.4), 0 25px 50px rgba(0,0,0,0.7)',
+                  outline: '1px solid rgba(180,140,60,0.25)',
+                  outlineOffset: '-1px',
                 }}
-              />
+              >
+                <img
+                  src={step.src}
+                  alt={step.alt}
+                  style={{
+                    width: "100%",
+                    height: "460px",
+                    objectFit: "cover",
+                    objectPosition: "center",
+                    display: "block",
+                  }}
+                />
+              </div>
               <div
                 className="absolute inset-0"
                 style={{
@@ -157,21 +168,32 @@ export function ElProcesoCreativoSection() {
 
           {/* Mobile: stacked */}
           <div className="md:hidden flex flex-col">
-            <div style={{ overflow: "hidden", width: "100%", padding: 0 }}>
+            <div style={{ overflow: "visible", width: "100%", padding: "1rem 1.5rem 0.5rem" }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={step.src}
-                alt={step.alt}
+              <div
                 style={{
-                  width: "calc(100% - 3rem)",
-                  height: "500px",
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  display: "block",
-                  margin: "0 1.5rem",
-                  borderRadius: "4px",
+                  position: 'relative',
+                  transform: 'none',
+                  width: '75%',
+                  maxWidth: '400px',
+                  boxShadow: '0 2px 4px rgba(0,0,0,0.4), 0 25px 50px rgba(0,0,0,0.7)',
+                  outline: '1px solid rgba(180,140,60,0.25)',
+                  outlineOffset: '-1px',
+                  margin: '0 auto',
                 }}
-              />
+              >
+                <img
+                  src={step.src}
+                  alt={step.alt}
+                  style={{
+                    width: "100%",
+                    height: "380px",
+                    objectFit: "cover",
+                    objectPosition: "center",
+                    display: "block",
+                  }}
+                />
+              </div>
             </div>
             <div
               className="py-6"

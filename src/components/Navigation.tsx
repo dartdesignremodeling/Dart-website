@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Smart Spaces", href: "/espacios-inteligentes" },
   { label: "Iluminación", href: "/iluminacion-arquitectonica" },
   { label: "Gran Escala", href: "/gran-escala" },
+  { label: "Blog", href: "/blog" },
   { label: "Hablemos", href: "/hablemos" },
 ];
 

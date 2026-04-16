@@ -5,6 +5,7 @@ import { ElProcesoCreativoSection } from "@/components/ElProcesoCreativoSection"
 import { StatsBar } from "@/components/StatsBar";
 import { OurEssenceSection } from "@/components/OurEssenceSection";
 import { NuestrasObrasSection } from "@/components/NuestrasObrasSection";
+import { LuzSection } from "@/components/LuzSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <StatsBar />
       <OurEssenceSection />
       <NuestrasObrasSection />
+      <LuzSection />
     </main>
   );
 }

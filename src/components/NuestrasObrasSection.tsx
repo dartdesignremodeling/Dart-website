@@ -47,7 +47,7 @@ export function NuestrasObrasSection() {
   return (
     <section
       id="nuestras-obras"
-      className="relative py-28 md:py-36 overflow-hidden"
+      className="relative pt-28 md:pt-36 pb-12 md:pb-16 overflow-hidden"
       style={{ background: "#1e1508" }}
     >
       {/* Subtle top rule */}
