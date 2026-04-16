@@ -1,7 +1,7 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion, useInView, useMotionValue, animate } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
 
 const stats = [
   { number: "30+", label: "Años de experiencia" },
@@ -10,12 +10,43 @@ const stats = [
   { number: "100%", label: "Proyectos a medida" },
 ];
 
+function parseNumber(str: string): { value: number; suffix: string } {
+  const match = str.match(/^(\d+)(.*)$/);
+  if (!match) return { value: 0, suffix: str };
+  return { value: parseInt(match[1], 10), suffix: match[2] };
+}
+
+function CountUp({ raw }: { raw: string }) {
+  const { value, suffix } = parseNumber(raw);
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-60px" });
+  const motionValue = useMotionValue(0);
+  const [display, setDisplay] = useState("0");
+
+  useEffect(() => {
+    if (!inView) return;
+    const controls = animate(motionValue, value, {
+      duration: 2,
+      ease: "easeOut",
+      onUpdate: (v) => setDisplay(String(Math.round(v))),
+    });
+    return controls.stop;
+  }, [inView, motionValue, value]);
+
+  return (
+    <span ref={ref}>
+      {display}{suffix}
+    </span>
+  );
+}
+
 export function StatsBar() {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
-    <div ref={ref} className="w-full" style={{ background: "#261a08" }}>
+    <>
+    <div ref={ref} className="w-full" style={{ background: "#1e1508", marginBottom: 0, paddingTop: "80px" }}>
       {/* Top gold rule */}
       <div className="h-px w-full bg-[#C9A96E]/10" />
 
@@ -33,22 +64,23 @@ export function StatsBar() {
               {i < stats.length - 1 && (
                 <span
                   aria-hidden="true"
-                  className="absolute right-0 top-1/4 h-1/2 w-px bg-[#C9A96E]/20"
+                  className="hidden md:block absolute right-0 top-1/4 h-1/2 w-px bg-[#C9A96E]/20"
                 />
               )}
 
               {/* Number */}
               <span
+                className="text-[clamp(2.4rem,10vw,3.8rem)] md:text-[clamp(3.2rem,5vw,5rem)]"
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
+                  fontStyle: "normal",
                   fontWeight: 300,
-                  fontSize: "clamp(3.2rem, 5vw, 5rem)",
-                  color: "#C9A96E",
+                  color: "#f5e6c8",
                   lineHeight: 1,
                   letterSpacing: "-0.01em",
                 }}
               >
-                {stat.number}
+                <CountUp raw={stat.number} />
               </span>
 
               {/* Label */}
@@ -67,8 +99,10 @@ export function StatsBar() {
         </div>
       </div>
 
-      {/* Bottom gold rule */}
-      <div className="h-px w-full bg-[#C9A96E]/10" />
     </div>
+
+    {/* Invisible spacer — matches page background, no border */}
+    <div style={{ height: "60px", background: "#1e1508" }} />
+    </>
   );
 }

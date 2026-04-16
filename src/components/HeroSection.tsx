@@ -78,12 +78,10 @@ export function HeroSection() {
       <div className="absolute bottom-10 md:bottom-16 left-5 right-5 md:left-16 md:right-auto z-10 md:max-w-2xl">
         {/* Line 1 — cream, medium weight */}
         <h1
-          className="leading-[1.0] md:leading-[1.05]"
+          className="leading-[1.0] md:leading-[1.05] not-italic md:italic text-[clamp(2.2rem,10vw,3.5rem)] md:text-[clamp(3rem,7vw,5rem)]"
           style={{
             fontFamily: "'Cormorant Garamond', serif",
-            fontStyle: "italic",
             fontWeight: 500,
-            fontSize: "clamp(3rem, 7vw, 5rem)",
           }}
         >
           <span className="block">
@@ -102,12 +100,10 @@ export function HeroSection() {
 
         {/* Line 2 — gold, featherweight for jewelry contrast */}
         <h1
-          className="hero-glow-text leading-[1.0] md:leading-[1.05] mt-0.5"
+          className="hero-glow-text leading-[1.0] md:leading-[1.05] mt-0.5 not-italic md:italic text-[clamp(2.2rem,10vw,3.5rem)] md:text-[clamp(2.3rem,6vw,5rem)]"
           style={{
             fontFamily: "'Cormorant Garamond', serif",
-            fontStyle: "italic",
             fontWeight: 300,
-            fontSize: "clamp(2.3rem, 6vw, 5rem)",
           }}
         >
           <span className="block">
@@ -144,7 +140,7 @@ export function HeroSection() {
         >
           <a
             href="/hablemos"
-            className="group inline-flex items-center gap-3 font-sans text-xs tracking-[0.2em] uppercase px-8 py-3.5 border transition-all duration-300"
+            className="group inline-flex items-center gap-3 font-sans text-[10px] tracking-[0.15em] uppercase px-5 py-2.5 border transition-all duration-300 w-fit"
             style={{
               borderColor: "#ffffff",
               color: "#ffffff",
