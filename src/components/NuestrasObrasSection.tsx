@@ -8,16 +8,16 @@ const projects = [
   },
   {
     id: 2,
-    name: "Lámpara Negra",
+    name: "Lámpara de Pared",
     tag: "ILUMINACIÓN",
-    src: "/images/lampara_negra.JPG",
+    src: "/images/lampara_pared.jpg",
     style: { gridColumn: "2", gridRow: "1" },
   },
   {
     id: 3,
-    name: "Lámpara de Pared",
+    name: "Lámpara Negra",
     tag: "ILUMINACIÓN",
-    src: "/images/lampara_pared.jpg",
+    src: "/images/lampara_negra.JPG",
     style: { gridColumn: "3", gridRow: "1" },
   },
   {
