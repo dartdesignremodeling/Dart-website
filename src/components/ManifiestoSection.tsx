@@ -6,14 +6,14 @@ export function ManifiestoSection() {
   return (
     <>
       {/* Top rule */}
-      <div style={{ backgroundColor: "#1e1508" }}>
+      <div style={{ backgroundColor: "#221c10" }}>
         <div style={{ height: "1px", backgroundColor: "rgba(201, 169, 110, 0.3)" }} />
       </div>
 
       <section
         className="relative w-full"
         style={{
-          backgroundColor: "#1e1508",
+          backgroundColor: "#221c10",
           paddingTop: "120px",
           paddingBottom: "120px",
         }}
@@ -46,8 +46,11 @@ export function ManifiestoSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            className="font-serif italic leading-[1.0] text-[#f5e6c8] text-center mb-16"
+            className="leading-[1.0] text-[#f5e6c8] text-center mb-16"
             style={{
+              fontFamily: "'Urbanist', sans-serif",
+              fontStyle: "italic",
+              fontWeight: 300,
               fontSize: "clamp(1.9rem, 4vw, 3rem)",
             }}
           >
@@ -103,7 +106,7 @@ export function ManifiestoSection() {
       </section>
 
       {/* Bottom rule */}
-      <div style={{ backgroundColor: "#1e1508" }}>
+      <div style={{ backgroundColor: "#221c10" }}>
         <div style={{ height: "1px", backgroundColor: "rgba(201, 169, 110, 0.3)" }} />
       </div>
     </>

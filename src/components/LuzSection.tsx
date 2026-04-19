@@ -50,7 +50,7 @@ export function LuzSection() {
         <h2 style={{ margin: 0, padding: 0 }}>
           <span
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "'Urbanist', sans-serif",
               fontWeight: 300,
               fontStyle: "italic",
               fontSize: "clamp(2.8rem, 6.5vw, 5.5rem)",
@@ -63,9 +63,9 @@ export function LuzSection() {
           </span>
           <span
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
-              fontWeight: 700,
-              fontStyle: "normal",
+              fontFamily: "'Urbanist', sans-serif",
+              fontWeight: 300,
+              fontStyle: "italic",
               fontSize: "clamp(2.8rem, 6.5vw, 5.5rem)",
               color: "rgba(255,255,255,0.95)",
               lineHeight: 1.1,

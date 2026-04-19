@@ -36,7 +36,7 @@ export default function BlogPage() {
         </p>
         <h1
           style={{
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "'Urbanist', sans-serif",
             fontStyle: "italic",
             fontWeight: 300,
             fontSize: "clamp(3.5rem, 8vw, 7rem)",

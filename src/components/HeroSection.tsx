@@ -81,10 +81,14 @@ export function HeroSection() {
       <div className="absolute bottom-10 md:bottom-16 left-5 right-5 md:left-16 md:right-auto z-10 md:max-w-2xl">
         {/* Line 1 — cream, medium weight */}
         <h1
-          className="leading-[1.0] md:leading-[1.05] not-italic md:italic text-[clamp(2.2rem,10vw,3.5rem)] md:text-[clamp(3rem,7vw,5rem)]"
+          className="leading-[0.95] not-italic"
           style={{
-            fontFamily: "'Cormorant Garamond', serif",
-            fontWeight: 500,
+            fontFamily: "'Urbanist', sans-serif",
+            fontWeight: 700,
+            fontStyle: "normal",
+            letterSpacing: "-0.03em",
+            lineHeight: 0.95,
+            fontSize: "clamp(1.8rem, 4vw, 3.2rem)",
           }}
         >
           <span className="block">
@@ -92,7 +96,8 @@ export function HeroSection() {
               <motion.span
                 key={word}
                 {...wordVariant(i)}
-                className="inline-block mr-[0.22em] text-[#f5e6c8] md:text-[#f2ede4]"
+                className="inline-block mr-[0.22em]"
+                style={{ color: "rgba(255,255,255,0.90)" }}
               >
                 {word}
               </motion.span>
@@ -102,10 +107,14 @@ export function HeroSection() {
 
         {/* Line 2 — gold, featherweight for jewelry contrast */}
         <h1
-          className="hero-glow-text leading-[1.0] md:leading-[1.05] mt-0.5 not-italic md:italic text-[clamp(2.2rem,10vw,3.5rem)] md:text-[clamp(2.3rem,6vw,5rem)]"
+          className="hero-glow-text mt-0.5"
           style={{
-            fontFamily: "'Cormorant Garamond', serif",
-            fontWeight: 300,
+            fontFamily: "'Urbanist', sans-serif",
+            fontWeight: 200,
+            fontStyle: "italic",
+            letterSpacing: "-0.03em",
+            lineHeight: 0.95,
+            fontSize: "clamp(2rem, 4.5vw, 3.8rem)",
           }}
         >
           <span className="block">
@@ -114,7 +123,7 @@ export function HeroSection() {
                 key={word}
                 {...wordVariant(line1.length + i)}
                 className="inline-block mr-[0.22em]"
-                style={{ color: "#C9A96E" }}
+                style={{ color: "#c9a84c" }}
               >
                 {word}
               </motion.span>
@@ -149,7 +158,7 @@ export function HeroSection() {
             }}
             onMouseEnter={(e) => {
               (e.currentTarget as HTMLAnchorElement).style.background = "#ffffff";
-              (e.currentTarget as HTMLAnchorElement).style.color = "#1e1508";
+              (e.currentTarget as HTMLAnchorElement).style.color = "#221c10";
             }}
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLAnchorElement).style.background = "transparent";

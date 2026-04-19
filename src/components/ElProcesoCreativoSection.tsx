@@ -36,7 +36,7 @@ const steps = [
 
 export function ElProcesoCreativoSection() {
   return (
-    <section className="relative overflow-hidden" style={{ background: "#1e1508" }}>
+    <section className="relative overflow-hidden" style={{ background: "#221c10" }}>
 
       {/* Architectural grid */}
       <div
@@ -57,7 +57,8 @@ export function ElProcesoCreativoSection() {
           El Proceso Creativo
         </p>
         <h2
-          className="font-serif italic leading-tight text-[#f5e6c8] text-[clamp(2rem,8vw,3rem)] md:text-[clamp(2.8rem,5vw,4.5rem)]"
+          className="leading-tight text-[#f5e6c8] text-[clamp(2rem,8vw,3rem)] md:text-[clamp(2.8rem,5vw,4.5rem)]"
+          style={{ fontFamily: "'Urbanist', sans-serif", fontStyle: "italic", fontWeight: 300 }}
         >
           Donde todo<br />
           <span style={{ color: "#c9a84c" }}>comienza</span>
@@ -100,9 +101,12 @@ export function ElProcesoCreativoSection() {
                   transform: 'none',
                   width: '75%',
                   maxWidth: '400px',
-                  boxShadow: '0 2px 4px rgba(0,0,0,0.4), 0 25px 50px rgba(0,0,0,0.7)',
+                  boxShadow: '0 0 40px rgba(236,164,19,0.1), 0 0 80px rgba(180,100,0,0.07), 0 30px 60px rgba(0,0,0,0.5)',
                   outline: '1px solid rgba(180,140,60,0.25)',
                   outlineOffset: '-1px',
+                  filter: 'drop-shadow(0 0 30px rgba(236,164,19,0.12)) drop-shadow(0 0 60px rgba(200,120,0,0.08))',
+                  borderRadius: '8px',
+                  overflow: 'hidden',
                 }}
               >
                 <img
@@ -151,8 +155,8 @@ export function ElProcesoCreativoSection() {
                   {step.number} · {step.label}
                 </p>
                 <h3
-                  className="font-serif italic text-[#f5e6c8] leading-tight mb-6"
-                  style={{ fontSize: "clamp(2rem, 3vw, 2.8rem)" }}
+                  className="text-[#f5e6c8] leading-tight mb-6"
+                  style={{ fontFamily: "'Urbanist', sans-serif", fontStyle: "italic", fontWeight: 300, fontSize: "clamp(2rem, 3vw, 2.8rem)" }}
                 >
                   {step.title}
                 </h3>
@@ -176,10 +180,13 @@ export function ElProcesoCreativoSection() {
                   transform: 'none',
                   width: '75%',
                   maxWidth: '400px',
-                  boxShadow: '0 2px 4px rgba(0,0,0,0.4), 0 25px 50px rgba(0,0,0,0.7)',
+                  boxShadow: '0 0 40px rgba(236,164,19,0.1), 0 0 80px rgba(180,100,0,0.07), 0 30px 60px rgba(0,0,0,0.5)',
                   outline: '1px solid rgba(180,140,60,0.25)',
                   outlineOffset: '-1px',
                   margin: '0 auto',
+                  filter: 'drop-shadow(0 0 30px rgba(236,164,19,0.12)) drop-shadow(0 0 60px rgba(200,120,0,0.08))',
+                  borderRadius: '8px',
+                  overflow: 'hidden',
                 }}
               >
                 <img
@@ -213,8 +220,8 @@ export function ElProcesoCreativoSection() {
                 {step.number} · {step.label}
               </p>
               <h3
-                className="font-serif italic text-[#f5e6c8] leading-tight mb-4"
-                style={{ fontSize: "clamp(1.5rem, 6vw, 2rem)" }}
+                className="text-[#f5e6c8] leading-tight mb-4"
+                style={{ fontFamily: "'Urbanist', sans-serif", fontStyle: "italic", fontWeight: 300, fontSize: "clamp(1.5rem, 6vw, 2rem)" }}
               >
                 {step.title}
               </h3>

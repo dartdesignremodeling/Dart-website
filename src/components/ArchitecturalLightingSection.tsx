@@ -21,7 +21,7 @@ export function ArchitecturalLightingSection() {
   return (
     <section id="lighting" className="relative py-36 md:py-48 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-[#1e1508]" />
+      <div className="absolute inset-0 bg-[#221c10]" />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -48,7 +48,7 @@ export function ArchitecturalLightingSection() {
                   background: `
                     radial-gradient(ellipse 60% 80% at 70% 30%, rgba(201, 168, 76, 0.18) 0%, transparent 60%),
                     radial-gradient(ellipse 40% 60% at 30% 70%, rgba(160, 100, 20, 0.12) 0%, transparent 55%),
-                    linear-gradient(165deg, #2e2010 0%, #1e1508 60%, #120d04 100%)
+                    linear-gradient(165deg, #2e2010 0%, #221c10 60%, #120d04 100%)
                   `,
                 }}
               >
@@ -107,7 +107,7 @@ export function ArchitecturalLightingSection() {
               </span>
             </div>
 
-            <h2 className="font-serif italic text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.0] text-[#f5e6c8] mb-8">
+            <h2 className="text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.0] text-[#f5e6c8] mb-8" style={{ fontFamily: "'Urbanist', sans-serif", fontStyle: "italic", fontWeight: 300 }}>
               La luz como
               <br />
               <span className="text-[#c9a84c]">material</span>
@@ -137,7 +137,7 @@ export function ArchitecturalLightingSection() {
                     <div className="w-px h-4 bg-[#c9a84c]/30 group-hover:bg-[#c9a84c]/70 transition-colors duration-300" />
                   </div>
                   <div>
-                    <h3 className="font-serif italic text-lg text-[#f5e6c8]/90 mb-1.5 group-hover:text-[#e8c87a] transition-colors duration-300">
+                    <h3 className="text-lg text-[#f5e6c8]/90 mb-1.5 group-hover:text-[#e8c87a] transition-colors duration-300" style={{ fontFamily: "'Urbanist', sans-serif", fontStyle: "italic", fontWeight: 300 }}>
                       {service.title}
                     </h3>
                     <p className="font-sans font-light text-sm leading-6 text-[#f5e6c8]/40">

@@ -48,7 +48,7 @@ export function NuestrasObrasSection() {
     <section
       id="nuestras-obras"
       className="relative pt-28 md:pt-36 pb-12 md:pb-16 overflow-hidden"
-      style={{ background: "#1e1508" }}
+      style={{ background: "#221c10" }}
     >
       {/* Subtle top rule */}
       <div className="absolute top-0 left-12 right-12 h-px bg-[#D4A853]/8" />
@@ -64,7 +64,7 @@ export function NuestrasObrasSection() {
             >
               Serie 2023 — 2024
             </p>
-            <h2 className="font-serif italic text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.0] text-[#f5e6c8] mb-8">
+            <h2 className="text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.0] text-[#f5e6c8] mb-8" style={{ fontFamily: "'Urbanist', sans-serif", fontStyle: "italic", fontWeight: 300 }}>
               Nuestras
               <br />
               <span style={{ color: "#c9a84c" }}>Obras</span>
@@ -103,7 +103,7 @@ export function NuestrasObrasSection() {
               />
 
               {/* Dark overlay on hover */}
-              <div className="absolute inset-0 bg-[#1e1508]/0 group-hover:bg-[#1e1508]/55 transition-colors duration-500" />
+              <div className="absolute inset-0 bg-[#221c10]/0 group-hover:bg-[#221c10]/55 transition-colors duration-500" />
 
               {/* Tag — always visible, top left */}
               <span
@@ -119,8 +119,8 @@ export function NuestrasObrasSection() {
                   <h3
                     className="text-[#f5f0e8] leading-tight"
                     style={{
-                      fontFamily: "'Cormorant Garamond', serif",
-                      fontStyle: "italic",
+                      fontFamily: "'Urbanist', sans-serif",
+                      fontStyle: "normal",
                       fontWeight: 400,
                       fontSize: "clamp(1.1rem, 1.8vw, 1.5rem)",
                     }}
@@ -154,13 +154,13 @@ export function NuestrasObrasSection() {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 style={{ filter: "brightness(0.82)" }}
               />
-              <div className="absolute inset-0 bg-[#1e1508]/0 group-hover:bg-[#1e1508]/55 transition-colors duration-500" />
-              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-[#1e1508]/80 to-transparent">
+              <div className="absolute inset-0 bg-[#221c10]/0 group-hover:bg-[#221c10]/55 transition-colors duration-500" />
+              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-[#221c10]/80 to-transparent">
                 <p
                   className="text-[#f5f0e8] leading-tight"
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
-                    fontStyle: "italic",
+                    fontFamily: "'Urbanist', sans-serif",
+                    fontStyle: "normal",
                     fontSize: "1rem",
                   }}
                 >

@@ -6,6 +6,7 @@ import { StatsBar } from "@/components/StatsBar";
 import { OurEssenceSection } from "@/components/OurEssenceSection";
 import { NuestrasObrasSection } from "@/components/NuestrasObrasSection";
 import { LuzSection } from "@/components/LuzSection";
+import { ColeccionLamparasSection } from "@/components/ColeccionLamparasSection";
 
 export default function Home() {
   return (
@@ -13,10 +14,11 @@ export default function Home() {
       <HeroSection />
       <LampEffect />
       <ManifiestoSection />
+      <ColeccionLamparasSection />
       <ElProcesoCreativoSection />
-      <StatsBar />
       <OurEssenceSection />
       <NuestrasObrasSection />
+      <StatsBar />
       <LuzSection />
     </main>
   );

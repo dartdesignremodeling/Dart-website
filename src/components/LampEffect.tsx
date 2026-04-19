@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 
 const LAMP = "#D4A853";
-const BG = "#1e1508";
+const BG = "#221c10";
 
 interface LampEffectProps {
   children?: React.ReactNode;

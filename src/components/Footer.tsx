@@ -20,7 +20,7 @@ const studio = [
 
 export function Footer() {
   return (
-    <footer style={{ background: "#1e1508", borderTop: "1px solid rgba(201,168,76,0.1)" }}>
+    <footer style={{ background: "#221c10", borderTop: "1px solid rgba(201,168,76,0.1)" }}>
 
       {/* Marquee */}
       <Marquee

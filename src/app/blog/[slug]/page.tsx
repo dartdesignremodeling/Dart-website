@@ -46,7 +46,7 @@ const mdxComponents = {
     <h2
       {...props}
       style={{
-        fontFamily: "'Cormorant Garamond', serif",
+        fontFamily: "'Urbanist', sans-serif",
         fontWeight: 600,
         fontStyle: "italic",
         fontSize: "clamp(1.5rem, 3vw, 2rem)",
@@ -61,7 +61,7 @@ const mdxComponents = {
     <h3
       {...props}
       style={{
-        fontFamily: "'Cormorant Garamond', serif",
+        fontFamily: "'Urbanist', sans-serif",
         fontWeight: 600,
         fontSize: "clamp(1.2rem, 2.5vw, 1.5rem)",
         color: "#C9A96E",
@@ -176,7 +176,7 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Title */}
         <h1
           style={{
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "'Urbanist', sans-serif",
             fontWeight: 700,
             fontStyle: "italic",
             fontSize: "clamp(2.2rem, 5vw, 3.5rem)",

@@ -3,9 +3,6 @@ export function OurEssenceSection() {
     <>
     <section id="nuestra-esencia" className="relative overflow-hidden" style={{ paddingTop: "60px" }}>
 
-      {/* Section top border */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-[#C9A96E]/10" />
-
       {/* ── Founder block — 2px gold left accent ── */}
       <div className="relative">
         {/* Left accent line */}
@@ -34,10 +31,10 @@ export function OurEssenceSection() {
               <h3
                 className="text-[#f5f0e8] leading-tight"
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "'Urbanist', sans-serif",
                   fontStyle: "italic",
                   fontSize: "1.75rem",
-                  fontWeight: 400,
+                  fontWeight: 300,
                 }}
               >
                 Juan Carlos Márquez
@@ -59,9 +56,10 @@ export function OurEssenceSection() {
             <h3
               className="hidden md:block text-[#f5f0e8] leading-tight mb-6"
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "'Urbanist', sans-serif",
+                fontStyle: "italic",
                 fontSize: "clamp(1.8rem, 3vw, 2.6rem)",
-                fontWeight: 400,
+                fontWeight: 300,
               }}
             >
               Juan Carlos Márquez
@@ -84,7 +82,7 @@ export function OurEssenceSection() {
               <div className="h-px w-12 bg-[#C9A96E]/40 mb-7" />
               <blockquote
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "'Urbanist', sans-serif",
                   fontStyle: "italic",
                   fontWeight: 300,
                   fontSize: "clamp(1.8rem, 2.6vw, 2.5rem)",
@@ -103,7 +101,7 @@ export function OurEssenceSection() {
               <div className="w-8 h-px bg-[#D4A853]/60 mb-6" />
               <blockquote
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "'Urbanist', sans-serif",
                   fontStyle: "italic",
                   fontWeight: 300,
                   fontSize: "1.6rem",

@@ -26,11 +26,11 @@ export const Marquee = React.forwardRef<HTMLDivElement, MarqueeProps>(
       <div ref={ref} className={cn("relative w-full overflow-hidden", className)} {...props}>
         <div
           className="absolute left-0 top-0 bottom-0 w-[15%] z-10"
-          style={{ background: "linear-gradient(to right, #1e1508, transparent)" }}
+          style={{ background: "linear-gradient(to right, #221c10, transparent)" }}
         />
         <div
           className="absolute right-0 top-0 bottom-0 w-[15%] z-10"
-          style={{ background: "linear-gradient(to left, #1e1508, transparent)" }}
+          style={{ background: "linear-gradient(to left, #221c10, transparent)" }}
         />
         <motion.div
           className="flex whitespace-nowrap"

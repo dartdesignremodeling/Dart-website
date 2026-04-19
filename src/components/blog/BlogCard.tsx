@@ -67,7 +67,7 @@ export function BlogCard({ post }: { post: PostMeta }) {
       {/* Title */}
       <h2
         style={{
-          fontFamily: "'Cormorant Garamond', serif",
+          fontFamily: "'Urbanist', sans-serif",
           fontWeight: 600,
           fontStyle: "italic",
           fontSize: "clamp(1.35rem, 2.2vw, 1.65rem)",

@@ -69,7 +69,7 @@ export default function ElProcesoCreativo() {
   return (
     <section
       className={cn('relative w-full overflow-hidden')}
-      style={{ background: '#1e1508' }}
+      style={{ background: '#221c10' }}
     >
       {/* Architectural grid background */}
       <div

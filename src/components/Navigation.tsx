@@ -85,7 +85,7 @@ export function Navigation() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#1e1508]/95 backdrop-blur-sm border-b border-[#c9a84c]/10"
+          ? "bg-[#221c10]/95 backdrop-blur-sm border-b border-[#c9a84c]/10"
           : "bg-transparent"
       }`}
     >
@@ -157,7 +157,7 @@ export function Navigation() {
           menuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-[#1e1508]/98 backdrop-blur-sm border-t border-[#c9a84c]/10 px-6 py-6">
+        <div className="bg-[#221c10]/98 backdrop-blur-sm border-t border-[#c9a84c]/10 px-6 py-6">
           <ul className="flex flex-col gap-6">
             {navLinks.map((link) => (
               <li key={link.href}>

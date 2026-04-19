@@ -41,7 +41,7 @@ export function StatsBar() {
 
   return (
     <>
-      <div ref={ref} className="w-full" style={{ background: "#1e1508", paddingTop: "80px" }}>
+      <div ref={ref} className="w-full" style={{ background: "#221c10", paddingTop: "80px" }}>
         {/* Top gold rule */}
         <div className="h-px w-full bg-[#C9A96E]/10" />
 
@@ -58,10 +58,11 @@ export function StatsBar() {
                 {/* Number */}
                 <div
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "'Urbanist', sans-serif",
                     fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
-                    fontWeight: 700,
-                    color: "rgba(236, 164, 19, 0.65)",
+                    fontStyle: "italic",
+                    fontWeight: 300,
+                    color: "#c9a84c",
                     lineHeight: 1,
                     letterSpacing: "-0.02em",
                   }}
@@ -89,7 +90,7 @@ export function StatsBar() {
       </div>
 
       {/* Spacer */}
-      <div style={{ height: "60px", background: "#1e1508" }} />
+      <div style={{ height: "60px", background: "#221c10" }} />
     </>
   );
 }

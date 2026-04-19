@@ -54,7 +54,7 @@ export function LetsTalkSection() {
   return (
     <section id="contact" className="relative py-36 md:py-48 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-[#1e1508]" />
+      <div className="absolute inset-0 bg-[#221c10]" />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -225,11 +225,11 @@ export function LetsTalkSection() {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="group relative inline-flex items-center gap-4 font-sans text-xs tracking-[0.2em] uppercase text-[#1e1508] bg-[#c9a84c] px-10 py-4 hover:bg-[#e8c87a] transition-colors duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="group relative inline-flex items-center gap-4 font-sans text-xs tracking-[0.2em] uppercase text-[#221c10] bg-[#c9a84c] px-10 py-4 hover:bg-[#e8c87a] transition-colors duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     {submitting ? (
                       <>
-                        <span className="inline-block w-3 h-3 border border-[#1e1508]/50 border-t-[#1e1508] rounded-full animate-spin" />
+                        <span className="inline-block w-3 h-3 border border-[#221c10]/50 border-t-[#221c10] rounded-full animate-spin" />
                         Enviando...
                       </>
                     ) : (
