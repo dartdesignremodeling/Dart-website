@@ -1,16 +1,16 @@
 const projects = [
   {
     id: 1,
-    name: "Lámpara Negra",
+    name: "Lámpara Blanca",
     tag: "ILUMINACIÓN",
-    src: "/images/lampara_negra.JPG",
+    src: "/images/lampara_blanca.jpg",
     style: { gridColumn: "1", gridRow: "1 / 3" },
   },
   {
     id: 2,
-    name: "Lámpara Blanca",
+    name: "Lámpara Negra",
     tag: "ILUMINACIÓN",
-    src: "/images/lampara_blanca.jpg",
+    src: "/images/lampara_negra.JPG",
     style: { gridColumn: "2", gridRow: "1" },
   },
   {
