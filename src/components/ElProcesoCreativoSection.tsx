@@ -97,42 +97,41 @@ export function ElProcesoCreativoSection() {
               }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <div
-                style={{
-                  position: 'relative',
-                  transform: 'none',
-                  width: '75%',
-                  maxWidth: '400px',
-                  boxShadow: '0 0 40px rgba(236,164,19,0.1), 0 0 80px rgba(180,100,0,0.07), 0 30px 60px rgba(0,0,0,0.5)',
-                  outline: '1px solid rgba(180,140,60,0.25)',
-                  outlineOffset: '-1px',
-                  filter: 'drop-shadow(0 0 30px rgba(236,164,19,0.12)) drop-shadow(0 0 60px rgba(200,120,0,0.08))',
-                  borderRadius: '8px',
-                  overflow: 'hidden',
-                }}
-              >
-                <img
-                  src={step.src}
-                  alt={step.alt}
+              <div style={{ display: 'flex', flexDirection: 'column', width: '75%', maxWidth: '400px' }}>
+                <div
                   style={{
-                    width: "100%",
-                    height: "460px",
-                    objectFit: "cover",
-                    objectPosition: "center",
-                    display: "block",
+                    position: 'relative',
+                    boxShadow: '0 0 40px rgba(236,164,19,0.1), 0 0 80px rgba(180,100,0,0.07), 0 30px 60px rgba(0,0,0,0.5)',
+                    outline: '1px solid rgba(180,140,60,0.25)',
+                    outlineOffset: '-1px',
+                    filter: 'drop-shadow(0 0 30px rgba(236,164,19,0.12)) drop-shadow(0 0 60px rgba(200,120,0,0.08))',
+                    borderRadius: '8px',
+                    overflow: 'hidden',
                   }}
-                />
-              </div>
-              {step.caption && (
-                <div style={{ marginTop: "12px", textAlign: "center" }}>
-                  <p style={{ fontFamily: "'Urbanist', sans-serif", fontWeight: 300, fontSize: "1.1rem", color: "#f5f0e8", letterSpacing: "0.04em" }}>
-                    {step.caption}
-                  </p>
-                  <p style={{ fontFamily: "'Urbanist', sans-serif", fontWeight: 400, fontSize: "0.75rem", color: "rgba(236,164,19,0.5)", letterSpacing: "0.2em", textTransform: "uppercase", marginTop: "4px" }}>
-                    {step.year}
-                  </p>
+                >
+                  <img
+                    src={step.src}
+                    alt={step.alt}
+                    style={{
+                      width: "100%",
+                      height: "460px",
+                      objectFit: "cover",
+                      objectPosition: "center",
+                      display: "block",
+                    }}
+                  />
                 </div>
-              )}
+                {step.caption && (
+                  <div style={{ marginTop: '12px' }}>
+                    <p style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300, color: '#f5f0e8', fontSize: '1rem', margin: 0 }}>
+                      {step.caption}
+                    </p>
+                    <p style={{ color: 'rgba(236,164,19,0.5)', fontSize: '0.75rem', letterSpacing: '0.15em', textTransform: 'uppercase', margin: '4px 0 0 0' }}>
+                      {step.year}
+                    </p>
+                  </div>
+                )}
+              </div>
               <div
                 className="absolute inset-0"
                 style={{
@@ -186,43 +185,41 @@ export function ElProcesoCreativoSection() {
           <div className="md:hidden flex flex-col">
             <div style={{ overflow: "visible", width: "100%", padding: "1rem 1.5rem 0.5rem" }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <div
-                style={{
-                  position: 'relative',
-                  transform: 'none',
-                  width: '75%',
-                  maxWidth: '400px',
-                  boxShadow: '0 0 40px rgba(236,164,19,0.1), 0 0 80px rgba(180,100,0,0.07), 0 30px 60px rgba(0,0,0,0.5)',
-                  outline: '1px solid rgba(180,140,60,0.25)',
-                  outlineOffset: '-1px',
-                  margin: '0 auto',
-                  filter: 'drop-shadow(0 0 30px rgba(236,164,19,0.12)) drop-shadow(0 0 60px rgba(200,120,0,0.08))',
-                  borderRadius: '8px',
-                  overflow: 'hidden',
-                }}
-              >
-                <img
-                  src={step.src}
-                  alt={step.alt}
+              <div style={{ display: 'flex', flexDirection: 'column', width: '75%', maxWidth: '400px', margin: '0 auto' }}>
+                <div
                   style={{
-                    width: "100%",
-                    height: "380px",
-                    objectFit: "cover",
-                    objectPosition: "center",
-                    display: "block",
+                    position: 'relative',
+                    boxShadow: '0 0 40px rgba(236,164,19,0.1), 0 0 80px rgba(180,100,0,0.07), 0 30px 60px rgba(0,0,0,0.5)',
+                    outline: '1px solid rgba(180,140,60,0.25)',
+                    outlineOffset: '-1px',
+                    filter: 'drop-shadow(0 0 30px rgba(236,164,19,0.12)) drop-shadow(0 0 60px rgba(200,120,0,0.08))',
+                    borderRadius: '8px',
+                    overflow: 'hidden',
                   }}
-                />
-              </div>
-              {step.caption && (
-                <div style={{ marginTop: "10px", textAlign: "center" }}>
-                  <p style={{ fontFamily: "'Urbanist', sans-serif", fontWeight: 300, fontSize: "1.1rem", color: "#f5f0e8", letterSpacing: "0.04em" }}>
-                    {step.caption}
-                  </p>
-                  <p style={{ fontFamily: "'Urbanist', sans-serif", fontWeight: 400, fontSize: "0.75rem", color: "rgba(236,164,19,0.5)", letterSpacing: "0.2em", textTransform: "uppercase", marginTop: "4px" }}>
-                    {step.year}
-                  </p>
+                >
+                  <img
+                    src={step.src}
+                    alt={step.alt}
+                    style={{
+                      width: "100%",
+                      height: "380px",
+                      objectFit: "cover",
+                      objectPosition: "center",
+                      display: "block",
+                    }}
+                  />
                 </div>
-              )}
+                {step.caption && (
+                  <div style={{ marginTop: '12px' }}>
+                    <p style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300, color: '#f5f0e8', fontSize: '1rem', margin: 0 }}>
+                      {step.caption}
+                    </p>
+                    <p style={{ color: 'rgba(236,164,19,0.5)', fontSize: '0.75rem', letterSpacing: '0.15em', textTransform: 'uppercase', margin: '4px 0 0 0' }}>
+                      {step.year}
+                    </p>
+                  </div>
+                )}
+              </div>
             </div>
             <div
               className="py-6"
