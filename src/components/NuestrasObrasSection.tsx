@@ -24,7 +24,7 @@ const projects = [
     id: 4,
     name: "Nicho de Luz",
     tag: "RESIDENCIAL",
-    src: "/images/nicho_luz.JPG",
+    src: "/images/nicho_luz2.png",
     style: { gridColumn: "2 / 4", gridRow: "2" },
   },
   {
