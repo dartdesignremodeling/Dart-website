@@ -5,11 +5,6 @@ import { motion } from "framer-motion";
 export function ManifiestoSection() {
   return (
     <>
-      {/* Top rule */}
-      <div style={{ backgroundColor: "#221c10" }}>
-        <div style={{ height: "1px", backgroundColor: "rgba(201, 169, 110, 0.3)" }} />
-      </div>
-
       <section
         className="relative w-full"
         style={{
@@ -105,10 +100,6 @@ export function ManifiestoSection() {
         </div>
       </section>
 
-      {/* Bottom rule */}
-      <div style={{ backgroundColor: "#221c10" }}>
-        <div style={{ height: "1px", backgroundColor: "rgba(201, 169, 110, 0.3)" }} />
-      </div>
     </>
   );
 }
