@@ -25,6 +25,8 @@ const projects = [
     name: "Nicho de Luz",
     tag: "RESIDENCIAL",
     src: "/images/nicho_luz2.png",
+    objectPosition: "center 60%",
+    imageScale: 1.4,
     style: { gridColumn: "2 / 4", gridRow: "2" },
   },
   {
@@ -99,7 +101,7 @@ export function NuestrasObrasSection() {
                 src={project.src}
                 alt={project.name}
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                style={{ filter: "brightness(0.82)" }}
+                style={{ filter: "brightness(0.82)", objectPosition: project.objectPosition ?? "center center", transform: `scale(${project.imageScale ?? 1})`, transformOrigin: project.objectPosition ?? "center center" }}
               />
 
               {/* Dark overlay on hover */}
