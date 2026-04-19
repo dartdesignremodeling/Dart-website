@@ -3,15 +3,18 @@
 const lamparas = [
   {
     src: "/images/lampara_circulos.jpg",
-    name: "Círculos",
+    name: "Lunen",
+    year: "2020",
   },
   {
     src: "/images/lampara_mesa%20de%20noche.jpg",
-    name: "Mesa de noche",
+    name: "Sharlet",
+    year: "2021",
   },
   {
     src: "/images/lampara_roja.jpg",
-    name: "Roja",
+    name: "Inkla",
+    year: "2006",
   },
 ];
 
@@ -76,7 +79,7 @@ export function ColeccionLamparasSection() {
                 />
               </div>
 
-              {/* Name */}
+              {/* Name + year */}
               <p
                 style={{
                   fontFamily: "'Urbanist', sans-serif",
@@ -88,6 +91,19 @@ export function ColeccionLamparasSection() {
                 }}
               >
                 {lamp.name}
+              </p>
+              <p
+                style={{
+                  fontFamily: "'Urbanist', sans-serif",
+                  fontWeight: 400,
+                  fontSize: "0.75rem",
+                  color: "rgba(236,164,19,0.5)",
+                  letterSpacing: "0.2em",
+                  textTransform: "uppercase",
+                  marginTop: "4px",
+                }}
+              >
+                {lamp.year}
               </p>
             </div>
           ))}
