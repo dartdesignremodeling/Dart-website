@@ -13,6 +13,8 @@ const steps = [
     src: "/images/boceto-1.jpg",
     alt: "Boceto de proyecto",
     imageLeft: true,
+    caption: "Petaloa",
+    year: "2012",
   },
   {
     number: "02",
@@ -121,6 +123,16 @@ export function ElProcesoCreativoSection() {
                   }}
                 />
               </div>
+              {step.caption && (
+                <div style={{ marginTop: "12px", textAlign: "center" }}>
+                  <p style={{ fontFamily: "'Urbanist', sans-serif", fontWeight: 300, fontSize: "1.1rem", color: "#f5f0e8", letterSpacing: "0.04em" }}>
+                    {step.caption}
+                  </p>
+                  <p style={{ fontFamily: "'Urbanist', sans-serif", fontWeight: 400, fontSize: "0.75rem", color: "rgba(236,164,19,0.5)", letterSpacing: "0.2em", textTransform: "uppercase", marginTop: "4px" }}>
+                    {step.year}
+                  </p>
+                </div>
+              )}
               <div
                 className="absolute inset-0"
                 style={{
@@ -201,6 +213,16 @@ export function ElProcesoCreativoSection() {
                   }}
                 />
               </div>
+              {step.caption && (
+                <div style={{ marginTop: "10px", textAlign: "center" }}>
+                  <p style={{ fontFamily: "'Urbanist', sans-serif", fontWeight: 300, fontSize: "1.1rem", color: "#f5f0e8", letterSpacing: "0.04em" }}>
+                    {step.caption}
+                  </p>
+                  <p style={{ fontFamily: "'Urbanist', sans-serif", fontWeight: 400, fontSize: "0.75rem", color: "rgba(236,164,19,0.5)", letterSpacing: "0.2em", textTransform: "uppercase", marginTop: "4px" }}>
+                    {step.year}
+                  </p>
+                </div>
+              )}
             </div>
             <div
               className="py-6"
