@@ -81,7 +81,7 @@ export function HeroSection() {
       <div className="absolute bottom-10 md:bottom-16 left-5 right-5 md:left-16 md:right-auto z-10 md:max-w-2xl">
         {/* Line 1 — cream, medium weight */}
         <h1
-          className="leading-[0.95] not-italic"
+          className="leading-[0.95] not-italic hero-line1"
           style={{
             fontFamily: "'Urbanist', sans-serif",
             fontWeight: 700,
@@ -107,7 +107,7 @@ export function HeroSection() {
 
         {/* Line 2 — gold, featherweight for jewelry contrast */}
         <h1
-          className="hero-glow-text mt-0.5"
+          className="hero-glow-text hero-line2 mt-0.5"
           style={{
             fontFamily: "'Urbanist', sans-serif",
             fontWeight: 200,

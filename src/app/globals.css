@@ -40,6 +40,21 @@ body {
   }
 }
 
+/* Hero mobile typography overrides */
+@media (max-width: 768px) {
+  .hero-line1 {
+    font-size: 2rem !important;
+    font-weight: 200 !important;
+    line-height: 1.1 !important;
+  }
+  .hero-line2 {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    font-style: italic !important;
+    line-height: 1.0 !important;
+  }
+}
+
 /* Thin decorative rule */
 .rule-gold {
   border-color: rgba(201, 168, 76, 0.3);
