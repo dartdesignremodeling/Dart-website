@@ -27,12 +27,12 @@ export default function WhatsAppButton() {
         transition: "transform 0.2s ease, box-shadow 0.2s ease",
       }}
       onMouseEnter={e => {
-        (e.currentTarget as HTMLElement).style.transform = "scale(1.1)"
-        (e.currentTarget as HTMLElement).style.boxShadow = "0 6px 25px rgba(37,211,102,0.4)"
+        (e.currentTarget as HTMLElement).style.transform = "scale(1.1)";
+        (e.currentTarget as HTMLElement).style.boxShadow = "0 6px 25px rgba(37,211,102,0.4)";
       }}
       onMouseLeave={e => {
-        (e.currentTarget as HTMLElement).style.transform = "scale(1)"
-        (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 20px rgba(0,0,0,0.3)"
+        (e.currentTarget as HTMLElement).style.transform = "scale(1)";
+        (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 20px rgba(0,0,0,0.3)";
       }}
     >
       <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
