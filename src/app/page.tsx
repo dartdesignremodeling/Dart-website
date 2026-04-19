@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { LampEffect } from "@/components/LampEffect";
 import { ManifiestoSection } from "@/components/ManifiestoSection";
 import { ElProcesoCreativoSection } from "@/components/ElProcesoCreativoSection";
+import { MaterialesSection } from "@/components/MaterialesSection";
 import { StatsBar } from "@/components/StatsBar";
 import { OurEssenceSection } from "@/components/OurEssenceSection";
 import { NuestrasObrasSection } from "@/components/NuestrasObrasSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <ManifiestoSection />
       <ColeccionLamparasSection />
       <ElProcesoCreativoSection />
+      <MaterialesSection />
       <OurEssenceSection />
       <NuestrasObrasSection />
       <StatsBar />
