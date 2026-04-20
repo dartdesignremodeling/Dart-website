@@ -5,19 +5,32 @@ import { Footer } from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "D'ART | Estudio de Arquitectura, Iluminación y Diseño de Espacios en Bogotá",
+  title: "D'art Studio | Arquitectura e Interiorismo en Colombia",
   description:
-    "Estudio de arquitectura e iluminación en Bogotá. Diseño de interiores, smart spaces, mobiliario a medida y remodelación integral. Creamos ambientes únicos para espacios residenciales y comerciales en Colombia.",
+    "Estudio de arquitectura e interiorismo en Bogotá. Proyectos a medida en Bogotá, Medellín y Cali.",
   keywords:
     "estudio arquitectura iluminación Bogotá, diseño espacios a medida Bogotá, remodelación integral Bogotá, smart spaces Colombia, diseño interiores lujo Bogotá, arquitectura residencial Colombia, iluminación arquitectónica residencial",
   openGraph: {
-    title: "D'ART | Arquitectura · Iluminación · Smart Spaces · Bogotá",
-    description:
-      "Estudio integral de arquitectura, iluminación, mobiliario y smart spaces en Bogotá. Ambientes únicos diseñados a medida.",
+    title: "D'art Studio | Arquitectura e Interiorismo",
+    description: "Espacios que perduran. Proyectos a medida en Colombia.",
     url: "https://dartestudio.co",
-    siteName: "D'ART Estudio",
+    siteName: "D'art Studio",
+    images: [
+      {
+        url: "https://dartestudio.co/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "D'art Studio - Arquitectura e Interiorismo",
+      },
+    ],
     locale: "es_CO",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "D'art Studio | Arquitectura e Interiorismo",
+    description: "Espacios que perduran. Proyectos a medida en Colombia.",
+    images: ["https://dartestudio.co/og-image.jpg"],
   },
   robots: { index: true, follow: true },
   alternates: { canonical: "https://dartestudio.co" },
