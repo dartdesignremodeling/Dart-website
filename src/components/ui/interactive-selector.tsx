@@ -5,31 +5,31 @@ const options = [
   {
     title: "Arquitectura",
     description: "Espacios que definen quiénes somos",
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80",
+    image: "/images/marmol.jpg",
     icon: "◻"
   },
   {
     title: "Iluminación",
     description: "La luz como elemento arquitectónico",
-    image: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=800&q=80",
+    image: "/images/madera.jpg",
     icon: "◎"
   },
   {
     title: "Smart Spaces",
     description: "Tecnología invisible al servicio del espacio",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    image: "/images/plantas.jpg",
     icon: "◈"
   },
   {
     title: "Mobiliario",
     description: "Piezas únicas diseñadas a medida",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+    image: "/images/roca_blanca.jpg",
     icon: "▣"
   },
   {
     title: "Gran Escala",
     description: "Proyectos que transforman ciudades",
-    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&q=80",
+    image: "/images/arena.jpg",
     icon: "◬"
   },
 ]
@@ -59,12 +59,12 @@ export const InteractiveSelector = () => {
           letterSpacing: '0.25em',
           textTransform: 'uppercase',
           marginBottom: '12px'
-        }}>Materiales</p>
+        }}>Texturas</p>
         <h2 style={{
-          fontFamily: "'Cormorant Garamond', serif",
-          fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+          fontFamily: "'Urbanist', sans-serif",
           fontWeight: 300,
           fontStyle: 'italic',
+          fontSize: 'clamp(2.5rem, 5vw, 4rem)',
           color: '#f5f0e8',
           margin: 0,
           lineHeight: 1.1
@@ -75,9 +75,10 @@ export const InteractiveSelector = () => {
       <div style={{
         display: 'flex',
         width: '100%',
-        height: '460px',
+        height: '520px',
         overflow: 'hidden',
         paddingLeft: '60px',
+        paddingRight: '60px',
         gap: '3px',
         boxSizing: 'border-box'
       }}>
@@ -93,7 +94,7 @@ export const InteractiveSelector = () => {
               opacity: animatedOptions.includes(index) ? 1 : 0,
               transform: animatedOptions.includes(index) ? 'translateX(0)' : 'translateX(-60px)',
               transition: 'flex 0.7s ease, opacity 0.5s ease, transform 0.5s ease, background-size 0.7s ease',
-              flex: activeIndex === index ? '7 1 0%' : '1 1 0%',
+              flex: activeIndex === index ? '4 1 0%' : '1 1 0%',
               minWidth: '60px',
               cursor: 'pointer',
               overflow: 'hidden',
@@ -109,54 +110,6 @@ export const InteractiveSelector = () => {
               transition: 'background 0.7s ease'
             }} />
 
-            {/* Label */}
-            <div style={{
-              position: 'absolute', bottom: '24px', left: '20px', right: '20px',
-              display: 'flex', alignItems: 'center', gap: '14px', zIndex: 2
-            }}>
-              {/* Icon circle */}
-              <div style={{
-                minWidth: '40px', height: '40px',
-                borderRadius: '50%',
-                background: 'rgba(236,164,19,0.15)',
-                border: '1px solid rgba(236,164,19,0.4)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                color: 'rgba(236,164,19,0.9)',
-                fontSize: '1rem',
-                flexShrink: 0
-              }}>
-                {option.icon}
-              </div>
-
-              {/* Text */}
-              <div>
-                <div style={{
-                  fontFamily: "'Urbanist', sans-serif",
-                  fontWeight: 600,
-                  fontSize: '1.1rem',
-                  color: '#f5f0e8',
-                  opacity: activeIndex === index ? 1 : 0,
-                  transform: activeIndex === index ? 'translateX(0)' : 'translateX(20px)',
-                  transition: 'opacity 0.5s ease, transform 0.5s ease',
-                  whiteSpace: 'nowrap'
-                }}>
-                  {option.title}
-                </div>
-                <div style={{
-                  fontFamily: "'Cormorant Garamond', serif",
-                  fontWeight: 300,
-                  fontStyle: 'italic',
-                  fontSize: '0.95rem',
-                  color: 'rgba(245,240,232,0.7)',
-                  opacity: activeIndex === index ? 1 : 0,
-                  transform: activeIndex === index ? 'translateX(0)' : 'translateX(20px)',
-                  transition: 'opacity 0.4s ease 0.1s, transform 0.4s ease 0.1s',
-                  whiteSpace: 'nowrap'
-                }}>
-                  {option.description}
-                </div>
-              </div>
-            </div>
           </div>
         ))}
       </div>

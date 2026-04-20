@@ -2,14 +2,11 @@
 import { useRef, useState } from "react"
 
 const materiales = [
-  { nombre: "Madera", url: "https://images.unsplash.com/photo-1558618047-f1a2e1d4b8b2?w=400&q=80" },
-  { nombre: "Mármol", url: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=400&q=80" },
-  { nombre: "Piedra", url: "https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?w=400&q=80" },
-  { nombre: "Concreto", url: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&q=80" },
-  { nombre: "Acero", url: "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=400&q=80" },
-  { nombre: "Lino", url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" },
-  { nombre: "Arena", url: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400&q=80" },
-  { nombre: "Latón", url: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&q=80" },
+  { nombre: "Mármol", url: "/images/marmol.jpg" },
+  { nombre: "Madera", url: "/images/madera.jpg" },
+  { nombre: "Plantas", url: "/images/plantas.jpg" },
+  { nombre: "Piedra", url: "/images/roca_blanca.jpg" },
+  { nombre: "Arena", url: "/images/arena.jpg" },
 ]
 
 export function MaterialesSection() {
