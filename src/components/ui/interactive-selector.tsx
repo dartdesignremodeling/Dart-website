@@ -72,7 +72,7 @@ export const InteractiveSelector = () => {
       </div>
 
       {/* Accordion strip */}
-      <div style={{
+      <div className="accordion-strip" style={{
         display: 'flex',
         width: '100%',
         height: '520px',

@@ -25,7 +25,7 @@ export function LampEffect({ children }: LampEffectProps) {
   return (
     <div
       ref={ref}
-      className="relative flex w-full flex-col items-center justify-center overflow-hidden"
+      className="lamp-effect-wrapper relative flex w-full flex-col items-center justify-center overflow-hidden"
       style={{ background: BG }}
     >
       {/* ── Beam stage ── */}

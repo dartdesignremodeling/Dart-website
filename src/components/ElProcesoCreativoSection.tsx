@@ -38,7 +38,7 @@ const steps = [
 
 export function ElProcesoCreativoSection() {
   return (
-    <section className="relative overflow-hidden" style={{ background: "#221c10" }}>
+    <section className="relative overflow-hidden proceso-creativo-section" style={{ background: "#221c10" }}>
 
       {/* Architectural grid */}
       <div
@@ -210,7 +210,7 @@ export function ElProcesoCreativoSection() {
                   />
                 </div>
                 {step.caption && (
-                  <div style={{ marginTop: '12px' }}>
+                  <div className="proceso-creativo-text" style={{ marginTop: '12px' }}>
                     <p style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300, color: '#f5f0e8', fontSize: '1rem', margin: 0 }}>
                       {step.caption}
                     </p>
@@ -222,7 +222,7 @@ export function ElProcesoCreativoSection() {
               </div>
             </div>
             <div
-              className="py-6"
+              className="py-6 proceso-creativo-text"
               style={{
                 paddingLeft: '1.5rem',
                 paddingRight: '1.5rem',

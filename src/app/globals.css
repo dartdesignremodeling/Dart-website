@@ -55,6 +55,68 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .lamp-effect-wrapper {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .manifiesto-section {
+    border: none !important;
+    border-top: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: #221c10 !important;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  .manifiesto-section > * {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .manifiesto-quote {
+    font-size: 1.6rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .manifiesto-section .md\:hidden p {
+    font-size: 0.95rem !important;
+  }
+
+  .proceso-creativo-text {
+    text-align: center !important;
+  }
+  .proceso-creativo-section > div:last-child .md\:hidden > div.py-6 {
+    padding-bottom: 2rem !important;
+  }
+
+  .accordion-strip {
+    height: 55vh !important;
+    max-height: 55vh !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .stats-wrapper {
+    padding-top: 40px !important;
+    padding-bottom: 0 !important;
+  }
+  .stats-wrapper .max-w-7xl {
+    padding-bottom: 0 !important;
+  }
+  .stats-spacer {
+    height: 0 !important;
+  }
+  .luz-section {
+    height: 50vh !important;
+    min-height: unset !important;
+    padding-top: 0 !important;
+    margin-top: 80px !important;
+  }
+}
+
 /* Thin decorative rule */
 .rule-gold {
   border-color: rgba(201, 168, 76, 0.3);

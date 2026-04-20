@@ -29,7 +29,7 @@ export function Footer() {
         duration={25}
         strokeWidth="1px"
         repeat={6}
-        className="py-0 -mt-[80px] md:mt-0 md:pt-2"
+        className="py-4 -mt-[20px] md:mt-0 md:py-2"
       />
 
       {/* Divider */}

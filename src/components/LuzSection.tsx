@@ -1,6 +1,7 @@
 export function LuzSection() {
   return (
     <section
+      className="luz-section"
       style={{
         height: '100vh',
         background: 'transparent',

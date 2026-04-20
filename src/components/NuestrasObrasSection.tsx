@@ -1,14 +1,14 @@
 const projects = [
   {
     id: 1,
-    name: "Lámpara Blanca",
+    name: "Trípode Pie",
     tag: "ILUMINACIÓN",
     src: "/images/lampara_blanca.jpg",
     style: { gridColumn: "1", gridRow: "1 / 3" },
   },
   {
     id: 2,
-    name: "Lámpara de Pared",
+    name: "Arrow",
     tag: "ILUMINACIÓN",
     src: "/images/lampara_pared.jpg",
     style: { gridColumn: "2", gridRow: "1" },

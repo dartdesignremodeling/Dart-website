@@ -41,12 +41,12 @@ export function StatsBar() {
 
   return (
     <>
-      <div ref={ref} className="w-full" style={{ background: "#221c10", paddingTop: "80px" }}>
+      <div ref={ref} className="w-full stats-wrapper" style={{ background: "#221c10", paddingTop: "80px" }}>
         {/* Top gold rule */}
-        <div className="h-px w-full bg-[#C9A96E]/10" />
+        <div className="h-px w-full bg-[#C9A96E]/10 hidden md:block" />
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-6 md:py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 pb-0 md:pb-0">
             {stats.map((stat, i) => (
               <motion.div
                 key={stat.label}
@@ -90,7 +90,7 @@ export function StatsBar() {
       </div>
 
       {/* Spacer */}
-      <div style={{ height: "60px", background: "#221c10" }} />
+      <div className="stats-spacer" style={{ height: "60px", background: "#221c10" }} />
     </>
   );
 }
