@@ -107,7 +107,7 @@ export function ArchitecturalLightingSection() {
               </span>
             </div>
 
-            <h2 className="text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.0] text-[#f5e6c8] mb-8" style={{ fontFamily: "'Urbanist', sans-serif", fontStyle: "italic", fontWeight: 300 }}>
+            <h2 className="font-serif italic font-light text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.0] text-[#f5e6c8] mb-8">
               La luz como
               <br />
               <span className="text-[#c9a84c]">material</span>
@@ -137,7 +137,7 @@ export function ArchitecturalLightingSection() {
                     <div className="w-px h-4 bg-[#c9a84c]/30 group-hover:bg-[#c9a84c]/70 transition-colors duration-300" />
                   </div>
                   <div>
-                    <h3 className="text-lg text-[#f5e6c8]/90 mb-1.5 group-hover:text-[#e8c87a] transition-colors duration-300" style={{ fontFamily: "'Urbanist', sans-serif", fontStyle: "italic", fontWeight: 300 }}>
+                    <h3 className="font-serif italic font-light text-lg text-[#f5e6c8]/90 mb-1.5 group-hover:text-[#e8c87a] transition-colors duration-300">
                       {service.title}
                     </h3>
                     <p className="font-sans font-light text-sm leading-6 text-[#f5e6c8]/40">

@@ -30,20 +30,12 @@ export default function BlogPage() {
       >
         <p
           className="font-sans text-[10px] tracking-[0.38em] uppercase mb-6"
-          style={{ color: "#D4A853" }}
+          style={{ color: "#c9a84c" }}
         >
           D&apos;ART · Estudio
         </p>
         <h1
-          style={{
-            fontFamily: "'Urbanist', sans-serif",
-            fontStyle: "italic",
-            fontWeight: 300,
-            fontSize: "clamp(3.5rem, 8vw, 7rem)",
-            lineHeight: 1.0,
-            color: "#f5e6c8",
-            margin: 0,
-          }}
+          className="italic font-light text-[#f5e6c8] leading-none m-0 text-[clamp(3.5rem,8vw,7rem)]"
         >
           Perspectivas
         </h1>

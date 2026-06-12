@@ -6,7 +6,7 @@ export function OurEssenceSection() {
       {/* ── Founder block — 2px gold left accent ── */}
       <div className="relative">
         {/* Left accent line */}
-        <div className="hidden md:block absolute left-0 top-0 bottom-0 w-[2px] bg-[#C9A96E]/30" />
+        <div className="hidden md:block absolute left-0 top-0 bottom-0 w-[2px] bg-[#c9a84c]/30" />
 
         <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 items-stretch">
 
@@ -24,18 +24,12 @@ export function OurEssenceSection() {
             <div className="md:hidden absolute bottom-0 left-0 right-0 p-5">
               <p
                 className="font-sans text-[9px] tracking-[0.22em] uppercase mb-2"
-                style={{ color: "#D4A853" }}
+                style={{ color: "#c9a84c" }}
               >
                 Fundador &amp; Director Creativo
               </p>
               <h3
-                className="text-[#f5f0e8] leading-tight"
-                style={{
-                  fontFamily: "'Urbanist', sans-serif",
-                  fontStyle: "italic",
-                  fontSize: "1.75rem",
-                  fontWeight: 300,
-                }}
+                className="italic font-light text-[#f5e6c8] leading-tight text-[1.75rem]"
               >
                 Juan Carlos Márquez
               </h3>
@@ -47,27 +41,21 @@ export function OurEssenceSection() {
             {/* Label — desktop only */}
             <p
               className="hidden md:block font-sans text-[10px] tracking-[0.35em] uppercase mb-5"
-              style={{ color: "#D4A853" }}
+              style={{ color: "#c9a84c" }}
             >
               — Fundador &amp; Director Creativo
             </p>
 
             {/* Name — desktop only */}
             <h3
-              className="hidden md:block text-[#f5f0e8] leading-tight mb-6"
-              style={{
-                fontFamily: "'Urbanist', sans-serif",
-                fontStyle: "italic",
-                fontSize: "clamp(1.8rem, 3vw, 2.6rem)",
-                fontWeight: 300,
-              }}
+              className="hidden md:block italic font-light text-[#f5e6c8] leading-tight mb-6 text-[clamp(1.8rem,3vw,2.6rem)]"
             >
               Juan Carlos Márquez
             </h3>
 
             {/* Bio */}
             <p
-              className="font-sans font-light leading-7 text-[#f5e6c8]/55 mb-8 pl-4 border-l border-[#D4A853]/40 md:border-0 md:pl-0"
+              className="font-sans font-light leading-7 text-[#f5e6c8]/55 mb-8 pl-4 border-l border-[#c9a84c]/40 md:border-0 md:pl-0"
               style={{ fontSize: "clamp(0.78rem, 2.2vw, 0.875rem)" }}
             >
               Con más de 30 años transformando espacios, Juan Carlos Márquez ha
@@ -79,16 +67,9 @@ export function OurEssenceSection() {
 
             {/* Quote — desktop */}
             <div className="hidden md:block">
-              <div className="h-px w-12 bg-[#C9A96E]/40 mb-7" />
+              <div className="h-px w-12 bg-[#c9a84c]/40 mb-7" />
               <blockquote
-                style={{
-                  fontFamily: "'Urbanist', sans-serif",
-                  fontStyle: "italic",
-                  fontWeight: 300,
-                  fontSize: "clamp(1.8rem, 2.6vw, 2.5rem)",
-                  lineHeight: 1.25,
-                  color: "#C9A96E",
-                }}
+                className="italic font-light text-[#c9a84c] leading-[1.25] text-[clamp(1.8rem,2.6vw,2.5rem)]"
               >
                 &ldquo;La luz no ilumina espacios.
                 <br />
@@ -98,29 +79,22 @@ export function OurEssenceSection() {
 
             {/* Quote — mobile */}
             <div className="md:hidden flex flex-col items-center text-center pt-2 pb-6">
-              <div className="w-8 h-px bg-[#D4A853]/60 mb-6" />
+              <div className="w-8 h-px bg-[#c9a84c]/60 mb-6" />
               <blockquote
-                style={{
-                  fontFamily: "'Urbanist', sans-serif",
-                  fontStyle: "italic",
-                  fontWeight: 300,
-                  fontSize: "1.6rem",
-                  lineHeight: 1.35,
-                  color: "#D4A853",
-                }}
+                className="italic font-light text-[#c9a84c] text-[1.6rem] leading-[1.35]"
               >
                 &ldquo;La luz no ilumina espacios.
                 <br />
                 Revela su alma.&rdquo;
               </blockquote>
-              <div className="w-8 h-px bg-[#D4A853]/60 mt-6" />
+              <div className="w-8 h-px bg-[#c9a84c]/60 mt-6" />
             </div>
           </div>
         </div>
       </div>
 
       {/* Bottom rule */}
-      <div className="absolute bottom-0 left-12 right-12 h-px bg-[#D4A853]/8" />
+      <div className="absolute bottom-0 left-12 right-12 h-px bg-[#c9a84c]/8" />
     </section>
 
 </>

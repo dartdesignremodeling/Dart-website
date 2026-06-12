@@ -176,7 +176,7 @@ export function NuestrasObrasSection() {
         {/* CTA button */}
         <div className="mt-16 flex justify-center">
           <a
-            href="#"
+            href="/gran-escala"
             className="inline-flex items-center gap-3 font-sans text-xs tracking-[0.2em] uppercase px-10 py-4 border border-[#f5f0e8]/60 text-[#f5f0e8]/80 transition-all duration-300 hover:border-[#D4A853] hover:text-[#D4A853]"
           >
             Ver Más Proyectos →

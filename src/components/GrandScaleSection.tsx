@@ -1,3 +1,25 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+const galleryImages = [
+  { src: "/images/gran-escala/bbq_gran_escala.jpg", alt: "Área BBQ gran escala" },
+  { src: "/images/gran-escala/campestre_gran_escala.jpg", alt: "Proyecto campestre gran escala" },
+  { src: "/images/gran-escala/cocina_interior.jpg", alt: "Cocina interior" },
+  { src: "/images/gran-escala/eexterior_gran_scala.jpg", alt: "Exterior gran escala" },
+  { src: "/images/gran-escala/fachada_centro_comercial.jpg", alt: "Fachada centro comercial" },
+  { src: "/images/gran-escala/iluminacion_gran_escala.jpg", alt: "Iluminación gran escala" },
+  { src: "/images/gran-escala/interior_campestre.jpg", alt: "Interior campestre" },
+  { src: "/images/gran-escala/interior_madera.jpg", alt: "Interior en madera" },
+  { src: "/images/gran-escala/nichos_de_luz.jpg", alt: "Nichos de luz" },
+  { src: "/images/gran-escala/porteria_interior.jpg", alt: "Portería interior" },
+  { src: "/images/baño_gran_escala.jpg", alt: "Baño gran escala" },
+  { src: "/images/baño_interior.jpg", alt: "Baño interior" },
+  { src: "/images/interior_gran_escala.jpg", alt: "Interior gran escala" },
+  { src: "/images/jacuzzi_interior.jpg", alt: "Jacuzzi interior" },
+  { src: "/images/gran-escala/exterior_campestre2.jpg", alt: "Exterior campestre" },
+];
+
 const stats = [
   { value: "15+", label: "Años de Experiencia" },
   { value: "200+", label: "Proyectos Realizados" },
@@ -121,6 +143,42 @@ export function GrandScaleSection() {
               sino legados de excelencia.&rdquo;
             </p>
             <div className="w-px h-12 bg-gradient-to-t from-[#c9a84c]/40 to-transparent" />
+          </div>
+        </div>
+
+        {/* Gallery */}
+        <div className="mt-32">
+          <div className="flex items-center gap-6 mb-10">
+            <div className="w-8 h-px bg-[#c9a84c]/40" />
+            <span className="font-sans text-[10px] tracking-[0.35em] uppercase text-[#c9a84c]/60">
+              Nuestra obra
+            </span>
+          </div>
+
+          <h2 className="font-serif italic text-[clamp(2rem,4vw,3.5rem)] leading-[1.0] text-[#f5e6c8] mb-14">
+            Galería de <span className="text-[#c9a84c]">proyectos</span>
+          </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
+            {galleryImages.map((img, i) => (
+              <motion.div
+                key={img.src}
+                className="overflow-hidden"
+                style={{ aspectRatio: "4/3" }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.6, delay: i * 0.08, ease: "easeOut" }}
+                whileHover={{ scale: 1.05 }}
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-full object-cover"
+                  style={{ display: "block" }}
+                />
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>

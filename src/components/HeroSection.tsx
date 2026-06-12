@@ -88,7 +88,7 @@ export function HeroSection() {
             fontStyle: "normal",
             letterSpacing: "-0.03em",
             lineHeight: 0.95,
-            fontSize: "clamp(1.8rem, 4vw, 3.2rem)",
+            fontSize: "clamp(1.8rem, 6vw, 6rem)",
           }}
         >
           <span className="block">
@@ -114,7 +114,7 @@ export function HeroSection() {
             fontStyle: "italic",
             letterSpacing: "-0.03em",
             lineHeight: 0.95,
-            fontSize: "clamp(2rem, 4.5vw, 3.8rem)",
+            fontSize: "clamp(2rem, 6.5vw, 7rem)",
           }}
         >
           <span className="block">

@@ -59,23 +59,14 @@ export function BlogCard({ post }: { post: PostMeta }) {
       {/* Category */}
       <span
         className="font-sans text-[9px] tracking-[0.32em] uppercase self-start"
-        style={{ color: "#D4A853" }}
+        style={{ color: "#c9a84c" }}
       >
         {post.category}
       </span>
 
       {/* Title */}
       <h2
-        style={{
-          fontFamily: "'Urbanist', sans-serif",
-          fontWeight: 600,
-          fontStyle: "italic",
-          fontSize: "clamp(1.35rem, 2.2vw, 1.65rem)",
-          lineHeight: 1.2,
-          color: "#f5e6c8",
-          margin: 0,
-          flexGrow: 1,
-        }}
+        className="italic font-semibold text-[#f5e6c8] leading-[1.2] m-0 grow text-[clamp(1.35rem,2.2vw,1.65rem)]"
       >
         {post.title}
       </h2>
@@ -113,7 +104,7 @@ export function BlogCard({ post }: { post: PostMeta }) {
         </div>
         <span
           className="font-sans text-sm transition-transform duration-300 group-hover:translate-x-1"
-          style={{ color: "#D4A853" }}
+          style={{ color: "#c9a84c" }}
         >
           →
         </span>

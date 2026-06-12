@@ -8,7 +8,6 @@ const LIMELIGHT = "#D4A853";
 
 const navLinks = [
   { label: "Nuestra Esencia", href: "/#nuestra-esencia" },
-  { label: "Smart Spaces", href: "/espacios-inteligentes" },
   { label: "Iluminación", href: "/iluminacion-arquitectonica" },
   { label: "Gran Escala", href: "/gran-escala" },
   { label: "Blog", href: "/blog" },

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Marquee } from "@/components/ui/marquee";
 
 const services = [
-  { label: "Smart Spaces", href: "/espacios-inteligentes" },
   { label: "Iluminación", href: "/iluminacion-arquitectonica" },
   { label: "Gran Escala", href: "/gran-escala" },
   { label: "Mobiliario", href: "#" },

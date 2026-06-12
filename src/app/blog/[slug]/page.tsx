@@ -46,11 +46,10 @@ const mdxComponents = {
     <h2
       {...props}
       style={{
-        fontFamily: "'Urbanist', sans-serif",
         fontWeight: 600,
         fontStyle: "italic",
         fontSize: "clamp(1.5rem, 3vw, 2rem)",
-        color: "#C9A96E",
+        color: "#c9a84c",
         lineHeight: 1.2,
         marginTop: "2.5rem",
         marginBottom: "1rem",
@@ -61,10 +60,9 @@ const mdxComponents = {
     <h3
       {...props}
       style={{
-        fontFamily: "'Urbanist', sans-serif",
         fontWeight: 600,
         fontSize: "clamp(1.2rem, 2.5vw, 1.5rem)",
-        color: "#C9A96E",
+        color: "#c9a84c",
         lineHeight: 1.3,
         marginTop: "2rem",
         marginBottom: "0.75rem",
@@ -77,7 +75,7 @@ const mdxComponents = {
       style={{
         fontSize: "1.125rem",
         lineHeight: 1.8,
-        color: "rgba(245,240,232,0.85)",
+        color: "rgba(245,230,200,0.85)",
         marginBottom: "1.5rem",
       }}
     />
@@ -85,7 +83,7 @@ const mdxComponents = {
   strong: (props: React.HTMLAttributes<HTMLElement>) => (
     <strong
       {...props}
-      style={{ color: "rgba(245,240,232,0.95)", fontWeight: 600 }}
+      style={{ color: "rgba(245,230,200,0.95)", fontWeight: 600 }}
     />
   ),
   ul: (props: React.HTMLAttributes<HTMLUListElement>) => (
@@ -104,7 +102,7 @@ const mdxComponents = {
       style={{
         fontSize: "1.125rem",
         lineHeight: 1.8,
-        color: "rgba(245,240,232,0.85)",
+        color: "rgba(245,230,200,0.85)",
         marginBottom: "0.5rem",
       }}
     />
@@ -112,14 +110,14 @@ const mdxComponents = {
   em: (props: React.HTMLAttributes<HTMLElement>) => (
     <em
       {...props}
-      style={{ color: "rgba(245,240,232,0.55)", fontStyle: "italic" }}
+      style={{ color: "rgba(245,230,200,0.55)", fontStyle: "italic" }}
     />
   ),
   a: (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
     <a
       {...props}
       style={{
-        color: "#C9A96E",
+        color: "#c9a84c",
         textDecoration: "underline",
         textUnderlineOffset: "3px",
       }}
@@ -155,13 +153,13 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="flex items-center gap-5 mb-8">
           <span
             className="font-sans text-[9px] tracking-[0.35em] uppercase"
-            style={{ color: "#D4A853" }}
+            style={{ color: "#c9a84c" }}
           >
             {post.category}
           </span>
           <span
             className="font-sans text-[10px] tracking-[0.1em]"
-            style={{ color: "rgba(245,240,232,0.25)" }}
+            style={{ color: "rgba(245,230,200,0.25)" }}
           >
             {formatDate(post.date)}
           </span>
@@ -175,15 +173,7 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Title */}
         <h1
-          style={{
-            fontFamily: "'Urbanist', sans-serif",
-            fontWeight: 700,
-            fontStyle: "italic",
-            fontSize: "clamp(2.2rem, 5vw, 3.5rem)",
-            lineHeight: 1.1,
-            color: "#f5e6c8",
-            marginBottom: "2rem",
-          }}
+          className="italic font-bold text-[#f5e6c8] leading-[1.1] mb-8 text-[clamp(2.2rem,5vw,3.5rem)]"
         >
           {post.title}
         </h1>

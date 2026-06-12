@@ -15,12 +15,6 @@ const options = [
     icon: "◎"
   },
   {
-    title: "Smart Spaces",
-    description: "Tecnología invisible al servicio del espacio",
-    image: "/images/plantas.jpg",
-    icon: "◈"
-  },
-  {
     title: "Mobiliario",
     description: "Piezas únicas diseñadas a medida",
     image: "/images/roca_blanca.jpg",
