@@ -7,7 +7,7 @@ const lamparas = [
     year: "2020",
   },
   {
-    src: "/images/lampara_mesa%20de%20noche.jpg",
+    src: "/images/lampara_mesa_de_noche.jpg",
     name: "Sharlet",
     year: "2021",
   },

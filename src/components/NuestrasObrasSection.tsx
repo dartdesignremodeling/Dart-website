@@ -24,7 +24,7 @@ const projects = [
     id: 4,
     name: "Nicho de Luz",
     tag: "RESIDENCIAL",
-    src: "/images/nicho_luz2.png",
+    src: "/images/gran-escala/piscina.JPG",
     objectPosition: "center 60%",
     imageScale: 1.4,
     style: { gridColumn: "2 / 4", gridRow: "2" },

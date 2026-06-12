@@ -14,7 +14,7 @@ export function OurEssenceSection() {
           <div className="relative mx-5 md:mx-0 h-[360px] md:h-[650px] overflow-hidden rounded-lg md:rounded-none">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/dise%C3%B1ador.jpg"
+              src="/images/disenador.jpg"
               alt="Juan Carlos Márquez — Fundador & Director Creativo"
               className="w-full h-full object-cover object-top block grayscale"
             />
