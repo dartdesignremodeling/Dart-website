@@ -66,7 +66,7 @@ export function BlogCard({ post }: { post: PostMeta }) {
 
       {/* Title */}
       <h2
-        className="italic font-semibold text-[#f5e6c8] leading-[1.2] m-0 grow text-[clamp(1.35rem,2.2vw,1.65rem)]"
+        className="font-serif italic font-light text-[#f5e6c8] leading-[1.2] m-0 grow text-[clamp(1.35rem,2.2vw,1.65rem)]"
       >
         {post.title}
       </h2>

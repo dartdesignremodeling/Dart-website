@@ -32,21 +32,25 @@ const projectTypes = [
     tag: "Corporativo",
     title: "Torres de Oficinas & Sedes Empresariales",
     desc: "Diseño de espacios de trabajo que proyectan la identidad corporativa y potencian la productividad a través de ambientes de excelencia.",
+    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80",
   },
   {
     tag: "Hotelería",
     title: "Hoteles Boutique & Resorts",
     desc: "Arquitectura de hospitalidad que traduce la identidad de la marca en experiencias sensoriales memorables para cada huésped.",
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80",
   },
   {
     tag: "Comercial",
     title: "Retail & Centros Comerciales",
     desc: "Espacios comerciales estratégicamente diseñados para maximizar la experiencia de compra y la percepción de marca.",
+    image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1200&q=80",
   },
   {
     tag: "Residencial",
     title: "Condominios & Urbanizaciones",
     desc: "Desarrollos residenciales de gran escala donde cada unidad mantiene los más altos estándares de diseño y calidad de vida.",
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80",
   },
 ];
 
@@ -76,7 +80,7 @@ export function GrandScaleSection() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
-            <h2 className="font-serif italic text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.0] text-[#f5e6c8]">
+            <h2 className="font-serif italic font-light text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.0] text-[#f5e6c8]">
               Proyectos de
               <br />
               <span className="text-[#c9a84c]">gran envergadura</span>
@@ -108,27 +112,38 @@ export function GrandScaleSection() {
           ))}
         </div>
 
-        {/* Project types */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-          {projectTypes.map((project, i) => (
+        {/* Project types — photo cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          {projectTypes.map((project) => (
             <div
               key={project.title}
-              className={`group p-10 md:p-12 hover:bg-[#c9a84c]/[0.025] transition-all duration-500 border-[#c9a84c]/10 ${
-                i < 2 ? "border-b" : ""
-              } ${i % 2 === 0 ? "md:border-r" : ""}`}
+              className="group relative overflow-hidden"
+              style={{ minHeight: "50vh" }}
             >
-              <span className="font-sans text-[9px] tracking-[0.3em] uppercase text-[#c9a84c]/50 mb-6 block">
-                {project.tag}
-              </span>
+              {/* Background image */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={project.image}
+                alt={project.tag}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              />
 
-              <div className="w-6 h-px bg-[#c9a84c]/25 mb-5 group-hover:w-12 transition-all duration-500" />
+              {/* Dark overlay — lightens on hover */}
+              <div className="absolute inset-0 bg-black/55 group-hover:bg-black/35 transition-colors duration-500" />
 
-              <h3 className="font-serif italic text-xl md:text-2xl text-[#f5e6c8] mb-4 group-hover:text-[#e8c87a] transition-colors duration-300 leading-snug">
-                {project.title}
-              </h3>
-              <p className="font-sans font-light text-sm leading-7 text-[#f5e6c8]/45">
-                {project.desc}
-              </p>
+              {/* Bottom-left text */}
+              <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10">
+                <span className="font-sans text-[9px] tracking-[0.35em] uppercase text-[#c9a84c] mb-4 block">
+                  {project.tag}
+                </span>
+                <div className="w-6 h-px bg-[#c9a84c]/50 mb-5 group-hover:w-12 transition-all duration-500" />
+                <h3 className="font-serif italic font-light text-xl md:text-2xl text-[#f5e6c8] mb-3 leading-snug group-hover:text-[#e8c87a] transition-colors duration-300">
+                  {project.title}
+                </h3>
+                <p className="font-sans font-light text-sm leading-7 text-white/60 max-w-sm">
+                  {project.desc}
+                </p>
+              </div>
             </div>
           ))}
         </div>
@@ -155,7 +170,7 @@ export function GrandScaleSection() {
             </span>
           </div>
 
-          <h2 className="font-serif italic text-[clamp(2rem,4vw,3.5rem)] leading-[1.0] text-[#f5e6c8] mb-14">
+          <h2 className="font-serif italic font-light text-[clamp(2rem,4vw,3.5rem)] leading-[1.0] text-[#f5e6c8] mb-14">
             Galería de <span className="text-[#c9a84c]">proyectos</span>
           </h2>
 
@@ -164,7 +179,7 @@ export function GrandScaleSection() {
               <motion.div
                 key={img.src}
                 className="overflow-hidden"
-                style={{ aspectRatio: "4/3" }}
+                style={{ aspectRatio: "4/3", position: "relative" }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
@@ -174,8 +189,15 @@ export function GrandScaleSection() {
                 <img
                   src={img.src}
                   alt={img.alt}
-                  className="w-full h-full object-cover"
-                  style={{ display: "block" }}
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    objectPosition: "center",
+                    display: "block",
+                  }}
                 />
               </motion.div>
             ))}

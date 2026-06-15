@@ -35,7 +35,7 @@ export default function BlogPage() {
           D&apos;ART · Estudio
         </p>
         <h1
-          className="italic font-light text-[#f5e6c8] leading-none m-0 text-[clamp(3.5rem,8vw,7rem)]"
+          className="font-serif italic font-light text-[#f5e6c8] leading-none m-0 text-[clamp(3.5rem,8vw,7rem)]"
         >
           Perspectivas
         </h1>

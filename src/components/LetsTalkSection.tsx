@@ -76,7 +76,7 @@ export function LetsTalkSection() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-end">
-            <h2 className="font-serif italic text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.0] text-[#f5e6c8]">
+            <h2 className="font-serif italic font-light text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.0] text-[#f5e6c8]">
               Cuéntenos
               <br />
               su <span className="text-[#c9a84c]">visión</span>
@@ -95,7 +95,7 @@ export function LetsTalkSection() {
             {submitted ? (
               <div className="flex flex-col items-start gap-6 py-16">
                 <div className="w-12 h-px bg-[#c9a84c]/50" />
-                <h3 className="font-serif italic text-3xl text-[#f5e6c8]">
+                <h3 className="font-serif italic font-light text-3xl text-[#f5e6c8]">
                   Gracias por su mensaje
                 </h3>
                 <p className="font-sans font-light text-base leading-7 text-[#f5e6c8]/55 max-w-sm">

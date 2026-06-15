@@ -4,6 +4,8 @@ const projects = [
     name: "Trípode Pie",
     tag: "ILUMINACIÓN",
     src: "/images/lampara_blanca.jpg",
+    objectFit: "contain" as const,
+    containerBg: "#1a1408",
     style: { gridColumn: "1", gridRow: "1 / 3" },
   },
   {
@@ -22,8 +24,8 @@ const projects = [
   },
   {
     id: 4,
-    name: "Nicho de Luz",
-    tag: "RESIDENCIAL",
+    name: "Piscina Casa de Campo",
+    tag: "GRAN ESCALA",
     src: "/images/gran-escala/piscina.JPG",
     objectPosition: "center 60%",
     imageScale: 1.4,
@@ -94,14 +96,14 @@ export function NuestrasObrasSection() {
             <div
               key={project.id}
               className="group relative overflow-hidden"
-              style={project.style}
+              style={{ ...project.style, background: project.containerBg ?? "transparent" }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={project.src}
                 alt={project.name}
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                style={{ filter: "brightness(0.82)", objectPosition: project.objectPosition ?? "center center", transform: `scale(${project.imageScale ?? 1})`, transformOrigin: project.objectPosition ?? "center center" }}
+                className="w-full h-full transition-transform duration-700 ease-out group-hover:scale-105"
+                style={{ objectFit: project.objectFit ?? "cover", filter: "brightness(0.92)", objectPosition: project.objectPosition ?? "center center", transform: `scale(${project.imageScale ?? 1})`, transformOrigin: project.objectPosition ?? "center center" }}
               />
 
               {/* Dark overlay on hover */}

@@ -46,7 +46,7 @@ const mdxComponents = {
     <h2
       {...props}
       style={{
-        fontWeight: 600,
+        fontWeight: 300,
         fontStyle: "italic",
         fontSize: "clamp(1.5rem, 3vw, 2rem)",
         color: "#c9a84c",
@@ -60,7 +60,8 @@ const mdxComponents = {
     <h3
       {...props}
       style={{
-        fontWeight: 600,
+        fontWeight: 300,
+        fontStyle: "italic",
         fontSize: "clamp(1.2rem, 2.5vw, 1.5rem)",
         color: "#c9a84c",
         lineHeight: 1.3,
@@ -173,7 +174,7 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Title */}
         <h1
-          className="italic font-bold text-[#f5e6c8] leading-[1.1] mb-8 text-[clamp(2.2rem,5vw,3.5rem)]"
+          className="font-serif italic font-light text-[#f5e6c8] leading-[1.1] mb-8 text-[clamp(2.2rem,5vw,3.5rem)]"
         >
           {post.title}
         </h1>
