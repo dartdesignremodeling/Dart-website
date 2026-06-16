@@ -32,25 +32,25 @@ const projectTypes = [
     tag: "Corporativo",
     title: "Torres de Oficinas & Sedes Empresariales",
     desc: "Diseño de espacios de trabajo que proyectan la identidad corporativa y potencian la productividad a través de ambientes de excelencia.",
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80",
+    image: "/images/divano.jpg",
   },
   {
     tag: "Hotelería",
     title: "Hoteles Boutique & Resorts",
     desc: "Arquitectura de hospitalidad que traduce la identidad de la marca en experiencias sensoriales memorables para cada huésped.",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80",
+    image: "/images/gran-escala/piscina.JPG",
   },
   {
     tag: "Comercial",
     title: "Retail & Centros Comerciales",
     desc: "Espacios comerciales estratégicamente diseñados para maximizar la experiencia de compra y la percepción de marca.",
-    image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1200&q=80",
+    image: "/images/mavaro.JPG",
   },
   {
     tag: "Residencial",
     title: "Condominios & Urbanizaciones",
     desc: "Desarrollos residenciales de gran escala donde cada unidad mantiene los más altos estándares de diseño y calidad de vida.",
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80",
+    image: "/images/condominio.JPG",
   },
 ];
 
@@ -70,27 +70,28 @@ export function GrandScaleSection() {
       />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12">
-        {/* Header */}
-        <div className="mb-24">
-          <div className="flex items-center gap-6 mb-10">
+        {/* Intro paragraph */}
+        <div className="mb-24 py-16 max-w-[700px]">
+          <div className="flex items-center gap-6 mb-8">
             <div className="w-8 h-px bg-[#c9a84c]/40" />
             <span className="font-sans text-[10px] tracking-[0.35em] uppercase text-[#c9a84c]/60">
-              04 — Gran Escala
+              — Nuestra Filosofía
             </span>
           </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
-            <h2 className="font-serif italic font-light text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.0] text-[#f5e6c8]">
-              Proyectos de
-              <br />
-              <span className="text-[#c9a84c]">gran envergadura</span>
-            </h2>
-            <p className="font-sans font-light text-base leading-8 text-[#f5e6c8]/50 max-w-md lg:max-w-none">
-              La magnitud no compromete el detalle. En D&apos;art, los proyectos
-              corporativos y de gran escala reciben la misma atención meticulosa
-              que caracteriza cada uno de nuestros trabajos.
-            </p>
-          </div>
+          <p
+            className="font-sans font-light leading-9 text-[#f5e6c8]/55 mb-6"
+            style={{ fontSize: "1.3rem" }}
+          >
+            La magnitud no compromete el detalle. En D&apos;art, los proyectos
+            corporativos y de gran escala reciben la misma atención meticulosa
+            que caracteriza cada uno de nuestros trabajos.
+          </p>
+          <p
+            className="font-serif italic font-light text-[#c9a84c]"
+            style={{ fontSize: "1.2rem" }}
+          >
+            Cada metro cuadrado cuenta. Cada decisión importa.
+          </p>
         </div>
 
         {/* Stats row */}

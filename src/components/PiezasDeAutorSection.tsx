@@ -22,7 +22,7 @@ export function PiezasDeAutorSection() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/obelisco-lampara.jpg"
-            alt="Lámpara Obelisco"
+            alt="Lámpara Obelisko"
             style={{
               display: "block",
               maxWidth: "100%",
@@ -70,7 +70,7 @@ export function PiezasDeAutorSection() {
             className="font-serif italic font-light text-[#f5e6c8] leading-[1.0] mb-4"
             style={{ fontSize: "clamp(3rem, 6vw, 5rem)" }}
           >
-            Lámpara Obelisco
+            Lámpara Obelisko
           </h2>
 
           {/* Year */}
@@ -91,18 +91,11 @@ export function PiezasDeAutorSection() {
             className="font-sans font-light text-[#f5e6c8]/55 leading-8 max-w-md mb-12"
             style={{ fontSize: "0.95rem" }}
           >
-            Todo comenzó con una obsesión por la forma. Inspirada en la silueta del
-            Obelisco de Washington, la lámpara Obelisko nació como una escultura que
-            también ilumina — diseñada y desarrollada bajo Hallmark, el estudio que
-            fundamos para darle vida a esta visión.
+            La idea surgió a partir de una lámpara inspirada en el icónico Obelisko de Washington. De esta inspiración nació la lámpara Obelisko. Paralelamente, se fundó Hallomark, una empresa dedicada al diseño y desarrollo de productos innovadores, donde se concibió y desarrolló este proyecto.
             <br /><br />
-            Un año después, fuimos invitados a ExpoDiseno 89. La Obelisko fue premiada
-            como mejor diseño industrial de la exposición.
+            Un año después, fuimos invitados a participar en Expodiseño 89, evento en el que la lámpara Obelisko recibió el reconocimiento al Mejor Diseño Industrial. Este importante logro despertó el interés internacional por el producto.
             <br /><br />
-            Lo que vino después cambió todo: Artemide, una de las empresas de iluminación
-            más prestigiosas del mundo, con sede en Italia, se comunicó con nosotros para
-            producir y distribuir la lámpara a nivel mundial. Una pieza colombiana,
-            reconocida por la industria global del diseño.
+            Como resultado, Artemide, una de las empresas más prestigiosas e influyentes del mundo en el sector de la iluminación, se puso en contacto con nosotros con el propósito de convertirse en el fabricante de la lámpara y distribuirla a nivel mundial.
           </p>
 
           {/* Award badge */}

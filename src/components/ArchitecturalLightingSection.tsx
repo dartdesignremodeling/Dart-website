@@ -2,7 +2,7 @@ const lightingServices = [
   {
     title: "Iluminación de Acento",
     desc: "Proyectores y sistemas de riel que resaltan texturas, obras de arte y elementos arquitectónicos con precisión milimétrica.",
-    image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600",
+    image: "/images/gran-escala/iluminacion_acento.JPG",
     icon: (
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M14 4 L10 12 L18 12 Z" stroke="#c9a84c" strokeWidth="1.2" fill="none" strokeLinejoin="round"/>
@@ -15,7 +15,7 @@ const lightingServices = [
   {
     title: "Iluminación Ambiental",
     desc: "Capas de luz suave y envolvente que definen la atmósfera de cada espacio y guían la experiencia sensorial.",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600",
+    image: "/images/gran-escala/iluminacion_gran_escala.jpg",
     icon: (
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="14" cy="13" r="4.5" stroke="#c9a84c" strokeWidth="1.2"/>
@@ -28,7 +28,7 @@ const lightingServices = [
   {
     title: "Luz Natural Integrada",
     desc: "Diseño estratégico de aberturas, espejos y superficies reflectantes para maximizar y esculpir la luz natural.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600",
+    image: "/images/gran-escala/luz_integrada.JPG",
     icon: (
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="14" cy="14" r="4" stroke="#c9a84c" strokeWidth="1.2"/>
@@ -46,7 +46,7 @@ const lightingServices = [
   {
     title: "Iluminación Exterior",
     desc: "Paisajismo lumínico que transforma fachadas, jardines y circulaciones en escenas nocturnas de gran impacto.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600",
+    image: "/images/gran-escala/exterior.JPG",
     icon: (
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <line x1="14" y1="24" x2="14" y2="10" stroke="#c9a84c" strokeWidth="1.2" strokeLinecap="round"/>

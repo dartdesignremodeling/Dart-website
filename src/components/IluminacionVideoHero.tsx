@@ -60,7 +60,7 @@ export function IluminacionVideoHero() {
             lineHeight: 1,
           }}
         >
-          Lámpara Obelisco
+          Lámpara Obelisko
         </span>
         <span
           className="font-sans"
